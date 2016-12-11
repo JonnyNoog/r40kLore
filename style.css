@@ -1,0 +1,202 @@
+
+* { padding: 0; margin: 0; }
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 0 10px 20px 10px;
+}
+
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:before,.clearfix:after, .cf:before, .cf:after {content:"";display:table;}
+.clearfix:after, .cf:after {clear:both;}
+.clearfix, .cf {zoom:1;}
+.hide { display: none !important; }
+
+.wrapper {
+    width: 100%;
+    max-width: 792px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.wrapper:not(.no-style) {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #999, inset 0 0 0 1px #FFF;
+    background: #ecf0f1;
+}
+.wrapper.no-margin {
+    margin-top: 0;
+}
+.wrapper.no-pad, .wrapper.no-pad:not(.no-style) {
+    padding: 0;
+}
+
+.spacer {
+    margin: 5px 0;
+}
+
+select, input[type=text], input[type=number] {
+    border: 1px solid #c8ccd0;
+    background: white;
+    padding: 3px 4px;
+    border-radius: 3px;
+}
+
+.center {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+label {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+label input[type=checkbox] + span {
+    margin-left: 5px;
+}
+
+#subreddit-selection {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+#subreddit-selection .sr-sep {
+    display: inline-block;
+    margin: 0 10px;
+    color: rgba(0,0,0,0.2);
+    font-size: 14px;
+    line-height: 14px;
+    height: 14px;
+}
+
+#flair-filter {
+    margin-bottom: 10px;
+    padding: 0 30px 0 10px;
+}
+
+#flair-filter-text {
+    min-width: 240px;
+    padding: 5px 10px;
+}
+
+#flair-filter label[for=flair-filter-sheet] {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#flair-filter label[for=flair-filter-sheet] span {
+    font-size: 13px;
+    margin-right: 5px;
+    color: rgba(0,0,0,0.5);
+}
+
+@media (max-width: 600px) {
+    #flair-filter {
+        flex-direction: column;
+    }
+    
+    #flair-filter label[for=flair-filter-sheet] {
+        margin-top: 4px;
+    }
+}
+
+/* HELP STUFF
+--------------------------------------------------------------------------------*/
+#help-link {
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+#help-link:hover {
+    text-decoration: underline;
+}
+
+#help-bubble.hide + .wrapper {
+    margin-top: 0;
+}
+
+#help-bubble {
+    font-size: 13px;
+}
+
+#help-bubble p {
+    margin: 0.5em 0;
+}
+
+/* BUTTON
+--------------------------------------------------------------------------------*/
+button, input[type=submit] {
+    display: inline-block;
+    margin: 0;
+    padding: 0 8px 1px;
+    background-color: #48f;
+    border: 1px solid #2a66d6;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 700;
+    font-size: small;
+    text-transform: capitalize;
+    line-height: 26px;
+    outline: 0!important;
+    box-shadow: inset 0 1px 0 #669bff;
+    cursor: pointer;
+}
+
+button:hover, input[type=submit]:hover {
+    background-color: #5d99ff
+}
+
+button:active, input[type=submit]:active {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, .2)
+}
+
+/* FLAIRS
+--------------------------------------------------------------------------------*/
+
+.flair {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 40px;
+    height: 32px;
+    cursor: pointer;
+    margin: 6px 2px;
+    position: relative;
+}
+.flair:not([class*='flair-']) {
+    background: rgba(0,0,0,0.03);
+    border-radius: 3px;
+}
+.flair:not([class*='flair-']):before {
+    content: '?';
+}
+
+.flair:hover, .flair.selected {
+    background-color: #3498db;
+    border-radius: 2px;
+}
+
+.flair {
+    background-color: transparent
+}

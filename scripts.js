@@ -3,7 +3,7 @@ flair.sheet_filter = null;
 flair.sheet_filter_change = false;
 flair.typing_timeout = null;
 
-flair.subreddits = ['Pokemon', 'Stunfisk', 'TruePokemon', 'Dugtrio'];
+flair.subreddits = ['40kLore', '40kLoreCSSTest'];
 
 flair.updateRegionFilter = function(sheet_name) {
     if (sheet_name == 'ALL') {
@@ -11,35 +11,35 @@ flair.updateRegionFilter = function(sheet_name) {
     } else {
         flair.sheet_filter = sheet_name;
     }
-    
+
     flair.sheet_filter_change = true;
     flair.updateFilter();
 }
 
 flair.updateFilter = function(text) {
     text = text || document.getElementById('flair-filter-text').value;
-    
+
     var is_int = text >>> 0 === parseFloat(text);
     if (is_int) {
         text = text.toString();
     }
-    
+
     text = text.toLowerCase();
-    
-    for (var poke_id in flair.by_id) {
-        if (flair.by_id.hasOwnProperty(poke_id)) {
-            var poke_name = flair.by_id[poke_id].poke_name.toLowerCase();
-            var sheet = flair.by_id[poke_id].sheet;
-            
-            var el = document.querySelector('.flair-choice[data-id="'+poke_id+'"]');
+
+    for (var flair_id in flair.by_id) {
+        if (flair.by_id.hasOwnProperty(flair_id)) {
+            var flair_name = flair.by_id[flair_id].flair_name.toLowerCase();
+            var sheet = flair.by_id[flair_id].sheet;
+
+            var el = document.querySelector('.flair-choice[data-id="'+flair_id+'"]');
             if (el == null)
                 continue;
-            
+
             if (
-                    // check poke_name
-                    (text.length == 0 || text == poke_name || (poke_name.indexOf(text) !== -1 && isNaN(text)) ||
-                    // check poke_id
-                    text === poke_id || text === flair.by_id[poke_id].orig_id) &&
+                    // check flair_name
+                    (text.length == 0 || text == flair_name || (flair_name.indexOf(text) !== -1 && isNaN(text)) ||
+                    // check flair_id
+                    text === flair_id || text === flair.by_id[flair_id].orig_id) &&
                     // check sheet
                     (flair.sheet_filter === null || flair.sheet_filter === sheet)
                 ) {
@@ -49,25 +49,25 @@ flair.updateFilter = function(text) {
             }
         }
     }
-    
+
     var fn_hashUpdate = function() {
         var hash = "#";
-        
+
         if (text.length != 0) {
             hash += "q=" + encodeURIComponent(text);
         }
-        
+
         if (flair.sheet_filter != null) {
             if (hash.length != 1) {
                 hash += "&";
             }
-            
+
             hash += "r=" + encodeURIComponent(flair.sheet_filter);
         }
-        
+
         history.replaceState(undefined, undefined, hash);
     };
-    
+
     // sheet filter change should be an immediate hash change
     // for the text filter, we should wait for the user to be done typing
     if (flair.sheet_filter_change) {
@@ -77,10 +77,10 @@ flair.updateFilter = function(text) {
         if (flair.typing_timeout) {
             clearTimeout(flair.typing_timeout);
         }
-        
+
         flair.typing_timeout = setTimeout(fn_hashUpdate, 600);
     }
-    
+
 }
 
 flair.sendChoice = function() {
@@ -88,14 +88,14 @@ flair.sendChoice = function() {
         alert('Choose a flair first!');
         return;
     }
-    
+
     var flair_text = encodeURIComponent(document.getElementById('flair-selection-text').value);
     var subreddits = '';
-    
+
     if (flair_text.length == 0) {
         flair_text = '%0A';
     }
-    
+
     var o = document.querySelectorAll('.sr-choice ');
     for (var i = 0, len = o.length; i < len; i++) {
         var sr_name = o[i].getAttribute('data-name');
@@ -103,44 +103,44 @@ flair.sendChoice = function() {
             subreddits += sr_name + ' ';
         }
     }
-    
-    window.open('http://www.reddit.com/message/compose/?to=PokemonFlairBot&subject='+
+
+    window.open('http://www.reddit.com/message/compose/?to=40kLoreFlairSevitor&subject='+
         flair.current_choice+
         '&message='+flair_text+'%0A'+
         subreddits)
 }
 
-flair.selectChoice = function(poke_id, key) {
-    var el = document.querySelector('.flair-choice[data-id="'+poke_id+'"]');
-    
+flair.selectChoice = function(flair_id, key) {
+    var el = document.querySelector('.flair-choice[data-id="'+flair_id+'"]');
+
     if (!el) {
         return;
     }
-    
+
     n.removeClass(document.querySelectorAll('.flair-choice'), 'selected');
     n.addClass(el, 'selected');
-    
+
     flair.current_choice = key;
-    
-    document.getElementById('flair-selection-flair').setAttribute('class', 'flair '+ flair.by_id[poke_id].flair_class);
-    document.getElementById('flair-selection-name').innerHTML = '#'+poke_id + ' ' + flair.by_id[poke_id].poke_name;
+
+    document.getElementById('flair-selection-flair').setAttribute('class', 'flair '+ flair.by_id[flair_id].flair_class);
+    document.getElementById('flair-selection-name').innerHTML = '#'+flair_id + ' ' + flair.by_id[flair_id].flair_name;
 }
 
 flair.loadChoices = function() {
-    flair.load__by_id();
-    
+    flair.load_by_id();
+
     var do_initial_updateFilter = false;
-    
+
     if(window.location.hash) {
         var hash = window.location.hash.substring(1);
-        
+
         if (hash == 'flair') {
             history.replaceState(undefined, undefined, "#");
         }
-        
+
         var q = n.getParameterByName('q', "?"+hash);
         var r = n.getParameterByName('r', "?"+hash);
-        
+
         if (q) {
             document.getElementById('flair-filter-text').value = q;
         }
@@ -151,56 +151,56 @@ flair.loadChoices = function() {
                     isAvailable = true;
                 }
             }
-            
+
             if (isAvailable) {
                 document.getElementById('flair-filter-sheet').value = r;
                 flair.sheet_filter = r;
             }
         }
-        
+
         if (q || r) {
             do_initial_updateFilter = true;
         }
     }
-    
+
     var enter = document.getElementById('flair-choices');
-    for (var poke_id in flair.by_id) {
-        if (flair.by_id.hasOwnProperty(poke_id)) {
-            var data = flair.by_id[poke_id];
-            
+    for (var flair_id in flair.by_id) {
+        if (flair.by_id.hasOwnProperty(flair_id)) {
+            var data = flair.by_id[flair_id];
+
             var flair_choice = document.createElement('span');
             flair_choice.setAttribute('class', 'flair flair-choice ' + data.flair_class);
-            flair_choice.setAttribute('data-name', data.poke_name);
-            flair_choice.setAttribute('title', '#'+data.poke_id + ' ' + data.poke_name);
-            flair_choice.setAttribute('data-id', data.poke_id);
-            flair_choice.setAttribute('onclick', 'flair.selectChoice("'+data.poke_id+'","'+data.key+'")');
-            
+            flair_choice.setAttribute('data-name', data.flair_name);
+            flair_choice.setAttribute('title', '#'+data.flair_id + ' ' + data.flair_name);
+            flair_choice.setAttribute('data-id', data.flair_id);
+            flair_choice.setAttribute('onclick', 'flair.selectChoice("'+data.flair_id+'","'+data.key+'")');
+
             enter.appendChild(flair_choice);
         }
     }
-    
+
     var sr_enter = document.getElementById('subreddit-selection');
     for (var i = 0; i < flair.subreddits.length; i++) {
         var sr = flair.subreddits[i];
-        
+
         var sr_choice = document.createElement('label');
         sr_choice.setAttribute('class', 'sr-choice');
         sr_choice.setAttribute('data-name', sr);
         sr_choice.setAttribute('for', 'sr-choice-'+sr);
-        
+
         var sr_choice_input = document.createElement('input');
         sr_choice_input.setAttribute('id', 'sr-choice-'+sr);
         sr_choice_input.setAttribute('type', 'checkbox');
         sr_choice_input.setAttribute('checked', '');
-        
+
         var sr_choice_span = document.createElement('span');
         sr_choice_span.textContent = sr;
-        
+
         sr_choice.appendChild(sr_choice_input);
         sr_choice.appendChild(sr_choice_span);
-        
+
         sr_enter.appendChild(sr_choice);
-        
+
         if (i != flair.subreddits.length-1) {
             var sr_sep = document.createElement('span');
             sr_sep.setAttribute('class', 'sr-sep');
@@ -208,7 +208,7 @@ flair.loadChoices = function() {
             sr_enter.appendChild(sr_sep);
         }
     }
-    
+
     if (do_initial_updateFilter) {
         flair.updateFilter();
     }
@@ -228,9 +228,9 @@ n.getParameterByName = function(name, url) {
 n.addClass = function(o, className) {
     if (!o || !className || !className.length)
         return;
-    
+
     o = n.isString(o) ? document.querySelectorAll(o) : o;
-    
+
     function do_stuff(el) {
         if (el.classList) {
             el.classList.add(className);
@@ -238,7 +238,7 @@ n.addClass = function(o, className) {
             el.className += ' ' + className;
         }
     }
-    
+
     if (n.isNodeList(o)) {
         for (var i = 0, len = o.length; i < len; i++)
             do_stuff(o[i]);
@@ -248,9 +248,9 @@ n.addClass = function(o, className) {
 n.removeClass = function(o, className) {
     if (!o || !className || !className.length)
         return;
-    
+
     o = n.isString(o) ? document.querySelectorAll(o) : o;
-    
+
     function do_stuff(el) {
         if (el.classList) {
             el.classList.remove(className);
@@ -259,7 +259,7 @@ n.removeClass = function(o, className) {
             document.getElementById("MyElement").className = document.getElementById("MyElement").className.replace(regExp);
         }
     }
-    
+
     if (n.isNodeList(o)) {
         for (var i = 0, len = o.length; i < len; i++)
             do_stuff(o[i]);
@@ -269,9 +269,9 @@ n.removeClass = function(o, className) {
 n.toggleClass = function(o, className) {
     if (!o || !className || !className.length)
         return;
-    
+
     o = n.isString(o) ? document.querySelectorAll(o) : o;
-    
+
     function do_stuff(el) {
         if (el.classList) {
             el.classList.toggle(className);
@@ -283,7 +283,7 @@ n.toggleClass = function(o, className) {
             }
         }
     }
-    
+
     if (n.isNodeList(o)) {
         for (var i = 0, len = o.length; i < len; i++)
             do_stuff(o[i]);
@@ -293,9 +293,9 @@ n.toggleClass = function(o, className) {
 n.hasClass = function(o, className) {
     if (!o || !className || !className.length)
         return false;
-    
+
     o = n.isString(o) ? document.querySelectorAll(o) : o;
-    
+
     function do_stuff(el) {
         if (el.classList) {
             return el.classList.contains(className);
@@ -304,13 +304,13 @@ n.hasClass = function(o, className) {
             return document.getElementById("MyElement").className.match(regExp);
         }
     }
-    
+
     if (n.isNodeList(o)) {
         for (var i = 0, len = o.length; i < len; i++)
             if (!do_stuff(o[i]))
                 return false;
     } else return do_stuff(o);
-    
+
     return true;
 }
 
@@ -362,7 +362,7 @@ n.isString = function(obj) {
 
 n.hide = function(o) {
     o = n.isString(o) ? document.querySelectorAll(o) : o;
-    
+
     if (n.isNodeList(o)) {
         for (var i = 0, len = o.length; i < len; i++) {
             o[i].style.display = 'none';
@@ -373,7 +373,7 @@ n.hide = function(o) {
 }
 n.show = function(o) {
     o = n.isString(o) ? document.querySelectorAll(o) : o;
-    
+
     if (n.isNodeList(o)) {
         for (var i = 0, len = o.length; i < len; i++) {
             o[i].style.display = '';

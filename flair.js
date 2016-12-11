@@ -1,11 +1,11 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2016-11-28T00:20:59-0800 (ISO-8601) */ 
-flair.load__by_id = function() {
+/* FLAIR MASTER CONFIG | auto-generated at 2016-11-28T00:20:59-0800 (ISO-8601) */
+flair.load_by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
             var data = key.split(' ');
-            
+
             var orig_id = data[2];
-            
+
             if (orig_id.substring(0, 'a'.length) === 'a') {
                 orig_id = orig_id.substring(1);
             }
@@ -25,14 +25,14 @@ flair.load__by_id = function() {
                 orig_id.substring(0, orig_id.length - 1).match(/^\d+$/)) {
                 orig_id = orig_id.substring(0, orig_id.length - 1);
             }
-            
+
             flair.by_id[data[2]] = {
                 key: key,
                 spritepos: data[0],
                 sheet: data[1],
-                poke_id: data[2],
+                flair_id: data[2],
                 orig_id: orig_id,
-                poke_name: flair.names[key],
+                flair_name: flair.names[key],
                 flair_class: ' flair-'+data[0] + ' flair-'+data[1] + ' flair-'+data[2]
             }
         }

@@ -1,47 +1,41 @@
 flair.current_choice = 0;
-flair.sheet_filter = null;
-flair.sheet_filter_change = false;
+flair.category_filter = null;
+flair.category_filter_change = false;
 flair.typing_timeout = null;
 
 flair.subreddits = ['40kLore', '40kLoreCSSTest'];
 
-flair.updateRegionFilter = function(sheet_name) {
-    if (sheet_name == 'ALL') {
-        flair.sheet_filter = null;
+flair.updateCategoryFilter = function(sheet_name) {
+    if (sheet_name === 'All') {
+        flair.category_filter = null;
     } else {
-        flair.sheet_filter = sheet_name;
+        flair.category_filter = sheet_name;
     }
 
-    flair.sheet_filter_change = true;
+    flair.category_filter_change = true;
     flair.updateFilter();
 }
 
 flair.updateFilter = function(text) {
     text = text || document.getElementById('flair-filter-text').value;
-
-    var is_int = text >>> 0 === parseFloat(text);
-    if (is_int) {
-        text = text.toString();
-    }
-
-    text = text.toLowerCase();
+    text = text.toString().toLowerCase();
 
     for (var flair_id in flair.by_id) {
         if (flair.by_id.hasOwnProperty(flair_id)) {
             var flair_name = flair.by_id[flair_id].flair_name.toLowerCase();
-            var sheet = flair.by_id[flair_id].sheet;
+            var categories = flair.by_id[flair_id].categories;
 
-            var el = document.querySelector('.flair-choice[data-id="'+flair_id+'"]');
-            if (el == null)
+            var el = document.querySelector('.flair-choice[data-id="' + flair_id + '"]');
+            if (el == null) {
                 continue;
+            }
 
             if (
-                    // check flair_name
-                    (text.length == 0 || text == flair_name || (flair_name.indexOf(text) !== -1 && isNaN(text)) ||
-                    // check flair_id
-                    text === flair_id || text === flair.by_id[flair_id].orig_id) &&
-                    // check sheet
-                    (flair.sheet_filter === null || flair.sheet_filter === sheet)
+                    // Check flair_name.
+                    (text.length === 0 || text === flair_name || flair_name.indexOf(text) !== -1)
+                    &&
+                    // Check categories.
+                    (flair.category_filter === null || categories.indexOf(flair.category_filter) !== -1)
                 ) {
                 n.show(el);
             } else {
@@ -57,21 +51,21 @@ flair.updateFilter = function(text) {
             hash += "q=" + encodeURIComponent(text);
         }
 
-        if (flair.sheet_filter != null) {
+        if (flair.category_filter != null) {
             if (hash.length != 1) {
                 hash += "&";
             }
 
-            hash += "r=" + encodeURIComponent(flair.sheet_filter);
+            hash += "r=" + encodeURIComponent(flair.category_filter);
         }
 
         history.replaceState(undefined, undefined, hash);
     };
 
-    // sheet filter change should be an immediate hash change
-    // for the text filter, we should wait for the user to be done typing
-    if (flair.sheet_filter_change) {
-        flair.sheet_filter_change = false;
+    // Category filter change should be an immediate hash change.
+    // For the text filter, we should wait for the user to be done typing.
+    if (flair.category_filter_change) {
+        flair.category_filter_change = false;
         fn_hashUpdate();
     } else {
         if (flair.typing_timeout) {
@@ -122,8 +116,8 @@ flair.selectChoice = function(flair_id, key) {
 
     flair.current_choice = key;
 
-    document.getElementById('flair-selection-flair').setAttribute('class', 'flair '+ flair.by_id[flair_id].flair_class);
-    document.getElementById('flair-selection-name').innerHTML = '#'+flair_id + ' ' + flair.by_id[flair_id].flair_name;
+    document.getElementById('flair-selection-flair').setAttribute('class', 'flair '+ flair.by_id[flair_id].flair_classes);
+    document.getElementById('flair-selection-name').innerHTML = flair.by_id[flair_id].flair_name;
 }
 
 flair.loadChoices = function() {
@@ -154,7 +148,7 @@ flair.loadChoices = function() {
 
             if (isAvailable) {
                 document.getElementById('flair-filter-sheet').value = r;
-                flair.sheet_filter = r;
+                flair.category_filter = r;
             }
         }
 
@@ -169,11 +163,11 @@ flair.loadChoices = function() {
             var data = flair.by_id[flair_id];
 
             var flair_choice = document.createElement('span');
-            flair_choice.setAttribute('class', 'flair flair-choice ' + data.flair_class);
+            flair_choice.setAttribute('class', 'flair flair-choice' + data.flair_classes);
             flair_choice.setAttribute('data-name', data.flair_name);
-            flair_choice.setAttribute('title', '#'+data.flair_id + ' ' + data.flair_name);
+            flair_choice.setAttribute('title', data.flair_name);
             flair_choice.setAttribute('data-id', data.flair_id);
-            flair_choice.setAttribute('onclick', 'flair.selectChoice("'+data.flair_id+'","'+data.key+'")');
+            flair_choice.setAttribute('onclick', 'flair.selectChoice("' + data.flair_id + '","' + data.key + '")');
 
             enter.appendChild(flair_choice);
         }

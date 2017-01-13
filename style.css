@@ -111,7 +111,7 @@ label input[type=checkbox] + span {
     #flair-filter {
         flex-direction: column;
     }
-    
+
     #flair-filter label[for=flair-filter-sheet] {
         margin-top: 4px;
     }
@@ -178,8 +178,8 @@ button:active, input[type=submit]:active {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
-    width: 40px;
-    height: 32px;
+    width: 80px;
+    height: 30px;
     cursor: pointer;
     margin: 6px 2px;
     position: relative;

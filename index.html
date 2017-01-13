@@ -62,18 +62,13 @@
                 onkeyup="flair.updateFilter(this.value)" onchange="flair.updateFilter(this.value)" />
             <label for="flair-filter-sheet">
                 <span>Filter by region:</span>
-                <select id="flair-filter-sheet" onchange="flair.updateRegionFilter(this.value)">
-                    <option value="ALL">All regions</option>
-                    <option value="kantoflair">Kanto</option>
-                    <option value="johtoflair">Johto</option>
-                    <option value="hoennflair">Hoenn</option>
-                    <option value="sinnohflair">Sinnoh</option>
-                    <option value="unovaflair">Unova</option>
-                    <option value="kalosflair">Kalos</option>
-                    <option value="alolaflair">Alola</option>
-                    <option value="megasflair">Megas</option>
-                    <option value="badgesflair">Badges</option>
-                    <option value="formsflair">Miscellaneous</option>
+                <select id="flair-filter-sheet" onchange="flair.updateCategoryFilter(this.value)">
+                    <option value="All" selected>All categories</option>
+                    <option value="AdeptusAstartes">Adeptus Astartes</option>
+                    <option value="LegionIDarkAngels">Legion I - Dark Angels</option>
+                    <option value="LegionIXBloodAngels">Legion IX - Blood Angels</option>
+                    <option value="AdeptusMilitarum">Adeptus Militarum</option>
+                    <option value="TempestusScions">Tempestus Scions</option>
                 </select>
             </label>
         </div>

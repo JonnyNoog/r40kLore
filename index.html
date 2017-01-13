@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans:300italic,400italic,600italic,700italic,400,300,600,700" type="text/css" media="all">
     <link rel="stylesheet" href="style.css" type="text/css" media="all">
     <link rel="stylesheet" href="flair.css" type="text/css" media="all">
     <!-- JavaScript -->
@@ -22,10 +21,9 @@
     <div id="help-bubble" class="wrapper no-margin hide">
         <h3>Help Info</h3>
         <p><b>Usage:</b> click on a flair below, using either of the two filters to narrow your search. Optionally enter
-        a flair text in the field that says "Insert flair text here", this is the text that goes below your username
-        in the user nameplate.</p>
+        your desired flair text in the field that says "Insert flair text here".</p>
 
-        <p>Once happy with your selection, click "Send Flair Request" which will open up a message form to /u/40kLoreFlairServitor,
+        <p>Once happy with your selection, click "Send Flair Request" which will open up a message form to <a href="https://www.reddit.com/user/40kLoreFlairServitor">/u/40kLoreFlairServitor</a>,
         do not change anything, just click send. You should receive a reply from the servitor within several moments notifying
         you that it has received your message and changed your flair.</p>
 
@@ -58,10 +56,10 @@
     </div>
     <div class="wrapper">
         <div id="flair-filter" class="center" style="-webkit-justify-content:space-between;justify-content:space-between;">
-            <input id="flair-filter-text" type="text" placeholder="Filter by Pokémon no. or name"
+            <input id="flair-filter-text" type="text" placeholder="Filter by flair name"
                 onkeyup="flair.updateFilter(this.value)" onchange="flair.updateFilter(this.value)" />
             <label for="flair-filter-sheet">
-                <span>Filter by region:</span>
+                <span>Filter by category:</span>
                 <select id="flair-filter-sheet" onchange="flair.updateCategoryFilter(this.value)">
                     <option value="All" selected>All categories</option>
                     <option value="AdeptusAstartes">Adeptus Astartes</option>

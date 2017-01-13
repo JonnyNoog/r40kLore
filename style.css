@@ -6,9 +6,13 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    padding: 0 10px 20px 10px;
+    color: #000;
+    text-shadow: none;
+    font-family: Georgia,Times,"Times New Roman",serif;
+    font-size: 11px;
+    letter-spacing: 0.025em;
+    background: url("https://b.thumbs.redditmedia.com/9flhTbiBP0zzS5jWO-Lgoccvn5l39oddJsccSU0Igsc.png") #e7d9bd no-repeat center center fixed;
+    background-size: cover;
 }
 
 .fl { float: left; }
@@ -30,9 +34,8 @@ body {
 
 .wrapper:not(.no-style) {
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 0 1px #999, inset 0 0 0 1px #FFF;
-    background: #ecf0f1;
+    border:1px solid #000;
+    background: #bbb;
 }
 .wrapper.no-margin {
     margin-top: 0;
@@ -104,7 +107,6 @@ label input[type=checkbox] + span {
 #flair-filter label[for=flair-filter-sheet] span {
     font-size: 13px;
     margin-right: 5px;
-    color: rgba(0,0,0,0.5);
 }
 
 @media (max-width: 600px) {
@@ -119,13 +121,14 @@ label input[type=checkbox] + span {
 
 /* HELP STUFF
 --------------------------------------------------------------------------------*/
-#help-link {
+a {
     display: inline-block;
     font-size: 12px;
     margin-bottom: 5px;
     text-decoration: none;
+    color:#e7523e;
 }
-#help-link:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -147,25 +150,17 @@ button, input[type=submit] {
     display: inline-block;
     margin: 0;
     padding: 0 8px 1px;
-    background-color: #48f;
-    border: 1px solid #2a66d6;
-    border-radius: 2px;
     color: #fff;
     font-weight: 700;
     font-size: small;
-    text-transform: capitalize;
+    text-transform: uppercase;
     line-height: 26px;
-    outline: 0!important;
-    box-shadow: inset 0 1px 0 #669bff;
     cursor: pointer;
-}
-
-button:hover, input[type=submit]:hover {
-    background-color: #5d99ff
-}
-
-button:active, input[type=submit]:active {
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, .2)
+    border: 0;
+    background: none;
+    box-shadow:none;
+    border-radius: 0px;
+    background-color: #000;
 }
 
 /* FLAIRS
@@ -190,11 +185,6 @@ button:active, input[type=submit]:active {
 }
 .flair:not([class*='flair-']):before {
     content: '?';
-}
-
-.flair:hover, .flair.selected {
-    background-color: #3498db;
-    border-radius: 2px;
 }
 
 .flair {

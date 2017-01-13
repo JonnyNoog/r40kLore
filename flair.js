@@ -25,7 +25,7 @@ flair.load_by_id = function() {
 }
 flair.by_id = {}
 flair.names = {
-    /*========== Legion I - DarkAngels - AdeptusAstartes =========*/
+    /*========== Legion I - Dark Angels - AdeptusAstartes =========*/
     "0-0 LegionIDarkAngels AdeptusAstartes": "Angels of Absolution",
     "0-1 LegionIDarkAngels AdeptusAstartes": "Angels of Redemption",
     "0-2 LegionIDarkAngels AdeptusAstartes": "Angels of Vengeance",

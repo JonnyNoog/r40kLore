@@ -2,8 +2,9 @@ flair.current_choice = 0;
 flair.category_filter = null;
 flair.category_filter_change = false;
 flair.typing_timeout = null;
+flair.single_subreddit = false;
 
-flair.subreddits = ['40kLore', '40kLoreCSSTest'];
+flair.subreddits = ['40kLore'];
 
 flair.updateCategoryFilter = function(sheet_name) {
     if (sheet_name === 'All') {
@@ -86,7 +87,7 @@ flair.sendChoice = function() {
     var flair_text = encodeURIComponent(document.getElementById('flair-selection-text').value);
     var subreddits = '';
 
-    if (flair_text.length == 0) {
+    if (flair_text.length === 0) {
         flair_text = '%0A';
     }
 
@@ -121,6 +122,10 @@ flair.selectChoice = function(flair_id, key) {
 }
 
 flair.loadChoices = function() {
+    if (flair.subreddits.length === 1) {
+        flair.single_subreddit = true;
+    }
+
     flair.load_by_id();
 
     var do_initial_updateFilter = false;
@@ -171,6 +176,11 @@ flair.loadChoices = function() {
 
             enter.appendChild(flair_choice);
         }
+    }
+
+    if (flair.single_subreddit) {
+        var el = document.getElementById('subreddit-selection-wrapper');
+        n.hide(el);
     }
 
     var sr_enter = document.getElementById('subreddit-selection');

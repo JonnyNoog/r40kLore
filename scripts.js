@@ -98,7 +98,7 @@ flair.sendChoice = function() {
         }
     }
 
-    window.open('http://www.reddit.com/message/compose/?to=40kLoreFlairSevitor&subject='+
+    window.open('http://www.reddit.com/message/compose/?to=40kLoreModServitor&subject='+
         flair.current_choice+
         '&message='+flair_text+'%0A'+
         subreddits)

@@ -8,7 +8,7 @@ html {
 body {
     color: #000;
     text-shadow: none;
-    font-family: Georgia,Times,"Times New Roman",serif;
+    font-family: "Times New Roman", Georgia, Serif;
     font-size: 11px;
     letter-spacing: 0.025em;
     background: url("https://b.thumbs.redditmedia.com/9flhTbiBP0zzS5jWO-Lgoccvn5l39oddJsccSU0Igsc.png") #e7d9bd no-repeat center center fixed;
@@ -34,8 +34,7 @@ body {
 
 .wrapper:not(.no-style) {
     padding: 10px;
-    border:1px solid #000;
-    background: #bbb;
+    border:3px solid #000;
 }
 .wrapper.no-margin {
     margin-top: 0;
@@ -150,10 +149,8 @@ button, input[type=submit] {
     display: inline-block;
     margin: 0;
     padding: 0 8px 1px;
-    color: #fff;
-    font-weight: 700;
-    font-size: small;
-    text-transform: uppercase;
+    color: #ffd09a;
+    font-size: large;
     line-height: 26px;
     cursor: pointer;
     border: 0;
@@ -161,6 +158,7 @@ button, input[type=submit] {
     box-shadow:none;
     border-radius: 0px;
     background-color: #000;
+    font-family: "Times New Roman", Georgia, Serif;
 }
 
 /* FLAIRS

@@ -84,7 +84,13 @@ flair.sendChoice = function() {
         return;
     }
 
-    var flair_text = encodeURIComponent(document.getElementById('flair-selection-text').value);
+    flair_text = "";
+    var flair_text_element = encodeURIComponent(document.getElementById('flair-selection-text'));
+
+    if (flair_text_element !== 'null') {
+        flair_text = flair_text_element.value;
+    }
+
     var subreddits = '';
 
     if (flair_text.length === 0) {

@@ -1,29 +1,29 @@
-flair.load_by_id = function() {
+flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
             var data = key.split(' ');
             var spritepos = data.shift();
-            var flair_classes = ' flair-' + spritepos;
+            var flairClasses = ' flair-' + spritepos;
             var categories = '';
 
             for (var i = 0; i < data.length; i++)
             {
-                flair_classes += ' flair-' + data[i];
+                flairClasses += ' flair-' + data[i];
                 categories += data[i];
             }
 
-            flair.by_id[key] = {
+            flair.byId[key] = {
                 key: key,
                 spritepos: spritepos,
                 categories: categories,
-                flair_id: key,
-                flair_name: flair.names[key],
-                flair_classes: flair_classes
+                flairId: key,
+                flairName: flair.names[key],
+                flairClasses: flairClasses
             }
         }
     }
 }
-flair.by_id = {}
+flair.byId = {}
 flair.names = {
     /*========== Legion I - Dark Angels - AdeptusAstartes =========*/
     "0-0 LegionIDarkAngels AdeptusAstartes": "Angels of Absolution",

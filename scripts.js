@@ -1,19 +1,19 @@
-flair.current_choice = 0;
-flair.category_filter = null;
-flair.category_filter_change = false;
-flair.typing_timeout = null;
-flair.single_subreddit = false;
+flair.currentChoice = 0;
+flair.categoryFilter = null;
+flair.categoryFilterChange = false;
+flair.typingTimeout = null;
+flair.singleSubreddit = false;
 
 flair.subreddits = ['40kLore'];
 
-flair.updateCategoryFilter = function(sheet_name) {
-    if (sheet_name === 'All') {
-        flair.category_filter = null;
+flair.updateCategoryFilter = function(sheetName) {
+    if (sheetName === 'All') {
+        flair.categoryFilter = null;
     } else {
-        flair.category_filter = sheet_name;
+        flair.categoryFilter = sheetName;
     }
 
-    flair.category_filter_change = true;
+    flair.categoryFilterChange = true;
     flair.updateFilter();
 }
 
@@ -21,22 +21,22 @@ flair.updateFilter = function(text) {
     text = text || document.getElementById('flair-filter-text').value;
     text = text.toString().toLowerCase();
 
-    for (var flair_id in flair.by_id) {
-        if (flair.by_id.hasOwnProperty(flair_id)) {
-            var flair_name = flair.by_id[flair_id].flair_name.toLowerCase();
-            var categories = flair.by_id[flair_id].categories;
+    for (var flairId in flair.byId) {
+        if (flair.byId.hasOwnProperty(flairId)) {
+            var flairName = flair.byId[flairId].flairName.toLowerCase();
+            var categories = flair.byId[flairId].categories;
 
-            var el = document.querySelector('.flair-choice[data-id="' + flair_id + '"]');
+            var el = document.querySelector('.flair-choice[data-id="' + flairId + '"]');
             if (el == null) {
                 continue;
             }
 
             if (
-                    // Check flair_name.
-                    (text.length === 0 || text === flair_name || flair_name.indexOf(text) !== -1)
+                    // Check flairName.
+                    (text.length === 0 || text === flairName || flairName.indexOf(text) !== -1)
                     &&
                     // Check categories.
-                    (flair.category_filter === null || categories.indexOf(flair.category_filter) !== -1)
+                    (flair.categoryFilter === null || categories.indexOf(flair.categoryFilter) !== -1)
                 ) {
                 n.show(el);
             } else {
@@ -52,12 +52,12 @@ flair.updateFilter = function(text) {
             hash += "q=" + encodeURIComponent(text);
         }
 
-        if (flair.category_filter != null) {
+        if (flair.categoryFilter != null) {
             if (hash.length != 1) {
                 hash += "&";
             }
 
-            hash += "c=" + encodeURIComponent(flair.category_filter);
+            hash += "c=" + encodeURIComponent(flair.categoryFilter);
         }
 
         history.replaceState(undefined, undefined, hash);
@@ -65,21 +65,21 @@ flair.updateFilter = function(text) {
 
     // Category filter change should be an immediate hash change.
     // For the text filter, we should wait for the user to be done typing.
-    if (flair.category_filter_change) {
-        flair.category_filter_change = false;
+    if (flair.categoryFilterChange) {
+        flair.categoryFilterChange = false;
         fn_hashUpdate();
     } else {
-        if (flair.typing_timeout) {
-            clearTimeout(flair.typing_timeout);
+        if (flair.typingTimeout) {
+            clearTimeout(flair.typingTimeout);
         }
 
-        flair.typing_timeout = setTimeout(fn_hashUpdate, 600);
+        flair.typingTimeout = setTimeout(fn_hashUpdate, 600);
     }
 
 }
 
 flair.sendChoice = function() {
-    if (flair.current_choice === 0) {
+    if (flair.currentChoice === 0) {
         alert('Choose a flair first!');
         return;
     }
@@ -106,13 +106,13 @@ flair.sendChoice = function() {
     }
 
     window.open('http://www.reddit.com/message/compose/?to=40kLoreModServitor&subject='+
-        flair.current_choice+
+        flair.currentChoice+
         '&message='+flair_text+'%0A'+
         subreddits)
 }
 
-flair.selectChoice = function(flair_id, key) {
-    var el = document.querySelector('.flair-choice[data-id="'+flair_id+'"]');
+flair.selectChoice = function(flairId, key) {
+    var el = document.querySelector('.flair-choice[data-id="'+flairId+'"]');
 
     if (!el) {
         return;
@@ -121,20 +121,20 @@ flair.selectChoice = function(flair_id, key) {
     n.removeClass(document.querySelectorAll('.flair-choice'), 'selected');
     n.addClass(el, 'selected');
 
-    flair.current_choice = key;
+    flair.currentChoice = key;
 
-    document.getElementById('flair-selection-flair').setAttribute('class', 'flair '+ flair.by_id[flair_id].flair_classes);
-    document.getElementById('flair-selection-name').innerHTML = flair.by_id[flair_id].flair_name;
+    document.getElementById('flair-selection-flair').setAttribute('class', 'flair '+ flair.byId[flairId].flairClasses);
+    document.getElementById('flair-selection-name').innerHTML = flair.byId[flairId].flairName;
 }
 
 flair.loadChoices = function() {
     if (flair.subreddits.length === 1) {
-        flair.single_subreddit = true;
+        flair.singleSubreddit = true;
     }
 
-    flair.load_by_id();
+    flair.loadById();
 
-    var do_initial_updateFilter = false;
+    var doInitialUpdateFilter = false;
 
     if(window.location.hash) {
         var hash = window.location.hash.substring(1);
@@ -159,67 +159,67 @@ flair.loadChoices = function() {
 
             if (isAvailable) {
                 document.getElementById('flair-filter-sheet').value = c;
-                flair.category_filter = c;
+                flair.categoryFilter = c;
             }
         }
 
         if (q || c) {
-            do_initial_updateFilter = true;
+            doInitialUpdateFilter = true;
         }
     }
 
     var enter = document.getElementById('flair-choices');
-    for (var flair_id in flair.by_id) {
-        if (flair.by_id.hasOwnProperty(flair_id)) {
-            var data = flair.by_id[flair_id];
+    for (var flairId in flair.byId) {
+        if (flair.byId.hasOwnProperty(flairId)) {
+            var data = flair.byId[flairId];
 
-            var flair_choice = document.createElement('span');
-            flair_choice.setAttribute('class', 'flair flair-choice' + data.flair_classes);
-            flair_choice.setAttribute('data-name', data.flair_name);
-            flair_choice.setAttribute('title', data.flair_name);
-            flair_choice.setAttribute('data-id', data.flair_id);
-            flair_choice.setAttribute('onclick', 'flair.selectChoice("' + data.flair_id + '","' + data.key + '")');
+            var flairChoice = document.createElement('span');
+            flairChoice.setAttribute('class', 'flair flair-choice' + data.flairClasses);
+            flairChoice.setAttribute('data-name', data.flairName);
+            flairChoice.setAttribute('title', data.flairName);
+            flairChoice.setAttribute('data-id', data.flairId);
+            flairChoice.setAttribute('onclick', 'flair.selectChoice("' + data.flairId + '","' + data.key + '")');
 
-            enter.appendChild(flair_choice);
+            enter.appendChild(flairChoice);
         }
     }
 
-    if (flair.single_subreddit) {
+    if (flair.singleSubreddit) {
         var el = document.getElementById('subreddit-selection-wrapper');
         n.hide(el);
     }
 
-    var sr_enter = document.getElementById('subreddit-selection');
+    var srEnter = document.getElementById('subreddit-selection');
     for (var i = 0; i < flair.subreddits.length; i++) {
         var sr = flair.subreddits[i];
 
-        var sr_choice = document.createElement('label');
-        sr_choice.setAttribute('class', 'sr-choice');
-        sr_choice.setAttribute('data-name', sr);
-        sr_choice.setAttribute('for', 'sr-choice-'+sr);
+        var srChoice = document.createElement('label');
+        srChoice.setAttribute('class', 'sr-choice');
+        srChoice.setAttribute('data-name', sr);
+        srChoice.setAttribute('for', 'sr-choice-'+sr);
 
-        var sr_choice_input = document.createElement('input');
-        sr_choice_input.setAttribute('id', 'sr-choice-'+sr);
-        sr_choice_input.setAttribute('type', 'checkbox');
-        sr_choice_input.setAttribute('checked', '');
+        var srChoiceInput = document.createElement('input');
+        srChoiceInput.setAttribute('id', 'sr-choice-'+sr);
+        srChoiceInput.setAttribute('type', 'checkbox');
+        srChoiceInput.setAttribute('checked', '');
 
-        var sr_choice_span = document.createElement('span');
-        sr_choice_span.textContent = sr;
+        var srChoiceSpan = document.createElement('span');
+        srChoiceSpan.textContent = sr;
 
-        sr_choice.appendChild(sr_choice_input);
-        sr_choice.appendChild(sr_choice_span);
+        srChoice.appendChild(srChoiceInput);
+        srChoice.appendChild(srChoiceSpan);
 
-        sr_enter.appendChild(sr_choice);
+        srEnter.appendChild(srChoice);
 
         if (i != flair.subreddits.length-1) {
-            var sr_sep = document.createElement('span');
-            sr_sep.setAttribute('class', 'sr-sep');
-            sr_sep.textContent = '|';
-            sr_enter.appendChild(sr_sep);
+            var srSep = document.createElement('span');
+            srSep.setAttribute('class', 'sr-sep');
+            srSep.textContent = '|';
+            srEnter.appendChild(srSep);
         }
     }
 
-    if (do_initial_updateFilter) {
+    if (doInitialUpdateFilter) {
         flair.updateFilter();
     }
 }

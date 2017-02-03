@@ -103,7 +103,7 @@ label input[type=checkbox] + span {
     align-items: center;
 }
 
-#flair-filter label[for=flair-filter-sheet] span {
+#flair-filter label[for=flair-filter-category] span {
     font-size: 13px;
     margin-right: 5px;
 }
@@ -116,6 +116,10 @@ label input[type=checkbox] + span {
     #flair-filter label[for=flair-filter-sheet] {
         margin-top: 4px;
     }
+}
+
+#flair-filter-category, #flair-filter-category option {
+    background-color: transparent;
 }
 
 /* HELP STUFF

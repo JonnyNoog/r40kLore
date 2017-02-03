@@ -56,15 +56,46 @@
         <div id="flair-filter" class="center" style="-webkit-justify-content:space-between;justify-content:space-between;">
             <input id="flair-filter-text" type="text" placeholder="Filter by flair name"
                 onkeyup="flair.updateFilter(this.value)" onchange="flair.updateFilter(this.value)" />
-            <label for="flair-filter-sheet">
+            <label for="flair-filter-category">
                 <span>Filter by faction:</span>
-                <select id="flair-filter-sheet" onchange="flair.updateCategoryFilter(this.value)">
-                    <option value="All" selected>All categories</option>
-                    <option value="AdeptusAstartes">Adeptus Astartes</option>
-                    <option value="LegionIDarkAngels">Legion I - Dark Angels</option>
-                    <option value="LegionIXBloodAngels">Legion IX - Blood Angels</option>
-                    <option value="AdeptusMilitarum">Adeptus Militarum</option>
-                    <option value="TempestusScions">Tempestus Scions</option>
+                <select id="flair-filter-category" onchange="flair.updateCategoryFilter(this.value)">
+                    <option value="All" selected>All Factions</option>
+                    <option value="ImperiumOfMan">Imperium of Man</option>
+                    <option value="AdeptusTerra">> Adeptus Terra</option>
+                    <option value="AdeptusAstartes">> Adeptus Astartes</option>
+                    <option value="DarkAngels">>> Legion I: Dark Angels</option>
+                    <option value="WhiteScars">>> Legion V: White Scars</option>
+                    <option value="SpaceWolves">>> Legion VI: Space Wolves</option>
+                    <option value="ImperialFists">>> Legion VII: Imperial Fists</option>
+                    <option value="BloodAngels">>> Legion IX: Blood Angels</option>
+                    <option value="IronHands">>> Legion X: Iron Hands</option>
+                    <option value="Ultramarines">>> Legion XIII: Ultramarines</option>
+                    <option value="Salamanders">>> Legion XVIII: Salamanders</option>
+                    <option value="RavenGuard">>> Legion XIX: Raven Guard</option>
+                    <option value="UnknownFoundings">>> Unknown Foundings</option>
+                    <option value="RenegadeChapters">>> Renegade Chapters</option>
+                    <option value="AstraMilitarum">> Astra Militarum</option>
+                    <option value="UnknownRegiments">>> Unknown Regiments</option>
+                    <option value="TempestusScions">>> Tempestus Scions</option>
+                    <option value="AdeptusSororitas">> Adeptus Sororitas</option>
+                    <option value="CollegiaTitanica">> Collegia Titanica</option>
+                    <option value="Inquisition">> Inquisition</option>
+                    <option value="OfficioAssassinorum">> Officio Assassinorum</option>
+                    <option value="Chaos">Chaos</option>
+                    <option value="ChaosGods">> Chaos Gods</option>
+                    <option value="ChaosLegions">> Chaos Legions</option>
+                    <option value="ChaosWarbands">> Chaos Warbands</option>
+                    <option value="TraitorTitanLegions">> Traitor Titan Legions</option>
+                    <option value="Xenos">Xenos</option>
+                    <option value="Eldar">> Eldar</option>
+                    <option value="Craftworlds">>> Eldar Craftworlds</option>
+                    <option value="Runes">>> Eldar Runes</option>
+                    <option value="DarkEldar">>> Dark Eldar</option>
+                    <option value="Harlequins">>> Harlequins</option>
+                    <option value="Necrons">> Necrons</option>
+                    <option value="Orks">> Orks</option>
+                    <option value="Tau">> Tau</option>
+                    <option value="Tyranids">> Tyranids</option>
                 </select>
             </label>
         </div>

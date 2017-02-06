@@ -701,6 +701,14 @@ flair_etc = [
             ('', True, "Tyranids")
         ]
     }),
+    ('NonUserFlair', {
+        1: [
+            ('', True, "Emperor of Mankind"),
+            ('', True, "High Lords of Terra"),
+            ('', True, "Great Wolf"),
+            ('', True, "Black Library")
+        ]
+    }),
 ]
 
 # create a flat list of ids in the flair_etc

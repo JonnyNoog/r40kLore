@@ -94,6 +94,7 @@ label input[type=checkbox] + span {
 #flair-filter-text {
     min-width: 240px;
     padding: 5px 10px;
+    background-color: transparent;
 }
 
 #flair-filter label[for=flair-filter-sheet] {
@@ -118,8 +119,16 @@ label input[type=checkbox] + span {
     }
 }
 
-#flair-filter-category, #flair-filter-category option {
+#flair-filter-category {
+    height:30px;
     background-color: transparent;
+}
+
+#flair-filter-category option {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #faf3da;
 }
 
 /* HELP STUFF

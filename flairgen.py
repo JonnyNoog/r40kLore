@@ -8,28 +8,26 @@ from flairnames import *
 output = ''
 output_source = ''
 load_by_id = """
-    flair.loadById = function() {
-        for (var key in flair.names) {
-            if (flair.names.hasOwnProperty(key)) {
-                var data = key.split(' ');
-                var spritepos = data.shift();
-                var flairClasses = ' flair-' + spritepos;
-                var categories = '';
+    for (var key in flair.names) {
+        if (flair.names.hasOwnProperty(key)) {
+            var data = key.split(' ');
+            var spritepos = data.shift();
+            var flairClasses = ' flair-' + spritepos;
+            var categories = '';
 
-                for (var i = 0; i < data.length; i++)
-                {
-                    flairClasses += ' flair-' + data[i];
-                    categories += data[i];
-                }
+            for (var i = 0; i < data.length; i++)
+            {
+                flairClasses += ' flair-' + data[i];
+                categories += data[i];
+            }
 
-                flair.byId[key] = {
-                    key: key,
-                    spritepos: spritepos,
-                    categories: categories,
-                    flairId: key,
-                    flairName: flair.names[key],
-                    flairClasses: flairClasses
-                }
+            flair.byId[key] = {
+                key: key,
+                spritepos: spritepos,
+                categories: categories,
+                flairId: key,
+                flairName: flair.names[key],
+                flairClasses: flairClasses
             }
         }
     }
@@ -192,7 +190,7 @@ for sheet in sheets:
 
     i += 1
 
-with open('./generated-flair.css', 'w+') as outfile:
+with open('./flair.css', 'w+') as outfile:
     outfile.seek(0)
     outfile.write(output)
     outfile.truncate()
@@ -246,7 +244,7 @@ for sheet_element in flair_etc:
 
 js_output += '};'
 
-with open('./generated-flair.js', 'w+') as outfile:
+with open('./flair.js', 'w+') as outfile:
     outfile.seek(0)
     outfile.write(js_output)
     outfile.truncate()

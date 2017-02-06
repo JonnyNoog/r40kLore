@@ -151,14 +151,14 @@ flair.loadChoices = function() {
         }
         if (c) {
             var isAvailable = false;
-            for (var i = 0; i < document.getElementById("flair-filter-sheet").length; i++){
-                if (document.getElementById("flair-filter-sheet").options[i].value == c){
+            for (var i = 0; i < document.getElementById("flair-filter-category").length; i++){
+                if (document.getElementById("flair-filter-category").options[i].value == c){
                     isAvailable = true;
                 }
             }
 
             if (isAvailable) {
-                document.getElementById('flair-filter-sheet').value = c;
+                document.getElementById('flair-filter-category').value = c;
                 flair.categoryFilter = c;
             }
         }

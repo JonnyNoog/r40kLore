@@ -206,13 +206,13 @@ with open('./jonnynoog.github.io-flair.css', 'w+') as outfile:
 js_output += 'flair.names = {' + "\n"
 js_output += "/* [STANDARD] */\n"
 
-for sheet_element in flair_etc:
+for sheet_element in FLAIR_ETC:
     i = 0
     categories = sheet_element[0]
     sheet_data = sheet_element[1]
     last_sheet_element = False
 
-    if i == len(flair_etc) - 1:
+    if i == len(FLAIR_ETC) - 1:
         last_sheet_element = True
 
     i += 1

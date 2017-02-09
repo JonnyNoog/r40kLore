@@ -1,4 +1,4 @@
-flair_etc = [
+FLAIR_ETC = [
     ('AdeptusTerra ImperiumOfMan', {
         1: [
             ('', True, "Imperium of Man"),
@@ -711,9 +711,9 @@ flair_etc = [
     }),
 ]
 
-# create a flat list of ids in the flair_etc
+# create a flat list of ids in the FLAIR_ETC
 flair_etc_list = []
-for sheet_element in flair_etc:
+for sheet_element in FLAIR_ETC:
     sheet_name = sheet_element[0]
     sheet_data = sheet_element[1]
     for line_number, sprite_map in sheet_data.items():

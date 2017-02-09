@@ -4,7 +4,7 @@ flair.categoryFilterChange = false;
 flair.typingTimeout = null;
 flair.singleSubreddit = false;
 
-flair.subreddits = ['40kLore'];
+flair.subreddits = ['40kLore', '40kLoreCSSTest'];
 
 flair.updateCategoryFilter = function(sheetName) {
     if (sheetName === 'All') {

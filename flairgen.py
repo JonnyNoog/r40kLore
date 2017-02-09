@@ -185,7 +185,8 @@ for sheet in sheets:
     output += '.flair-' + sheet + '{background-image:url(%%' + sheet + '%%) !important}'
     output += "\n"
 
-    output_source += '.flair-' + sheet + '{background-image:url(' + sheet_source[i] + ') !important}'
+    output_source += '.flair-' + sheet + '{background-image:url(' + \
+    sheet_source[i] + ') !important}'
     output_source += "\n"
 
     i += 1
@@ -232,12 +233,12 @@ for sheet_element in FLAIR_ETC:
             if last_sheet_element and last_item:
                 string_ending = '"'
 
-            if enabled:
-                if individual_categories:
-                    categories += ' ' + individual_categories
+            if individual_categories:
+                individual_categories = ' ' + individual_categories
 
+            if enabled:
                 js_output += '    "' + str(line_number -1) + '-' + str(j) + ' ' + \
-                categories + '": "' + flair_name + string_ending
+                categories + individual_categories + '": "' + flair_name + string_ending
                 js_output += "\n"
 
             j += 1

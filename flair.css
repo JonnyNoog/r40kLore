@@ -1,25 +1,44 @@
-.flair-0-0{background-position:0 0}
-.flair-0-1{background-position:-80px 0}
-.flair-0-2{background-position:-160px 0}
-.flair-0-3{background-position:-240px 0}
-.flair-0-4{background-position:-320px 0}
-.flair-0-5{background-position:-400px 0}
-.flair-0-6{background-position:-480px 0}
-.flair-0-7{background-position:-560px 0}
-.flair-0-8{background-position:-640px 0}
-.flair-0-9{background-position:-720px 0}
-.flair-1-0{background-position:0 -30px}
-.flair-1-1{background-position:-80px -30px}
-.flair-1-2{background-position:-160px -30px}
-.flair-1-3{background-position:-240px -30px}
-.flair-1-4{background-position:-320px -30px}
-.flair-1-5{background-position:-400px -30px}
-.flair-1-6{background-position:-480px -30px}
-.flair-1-7{background-position:-560px -30px}
-.flair-1-8{background-position:-640px -30px}
-.flair-1-9{background-position:-720px -30px}
-
-.flair-LegionIDarkAngels{background-image:url('https://b.thumbs.redditmedia.com/vTjdxaX4xILnIM2spnSN_tBFeS0Ek6ouftZjOjwLqQk.png') !important}
-.flair-LegionIXBloodAngels{background-image:url('https://b.thumbs.redditmedia.com/_GnrAUbt4DQal0oxDNqyD2uJIt78HYySFmYjlOJMq-w.png') !important}
-.flair-AdeptusMilitarum{background-image:url('https://b.thumbs.redditmedia.com/AHDIsgcRu6hKqoUbzs0kTZhKxr_aypgGDqZAzHui4BE.png') !important}
-.flair-TempestusScions{background-image:url('https://b.thumbs.redditmedia.com/jqCgTVO5rc3jIEkJRZp6Om5yXpCAJ49-3Uj7XSSGdBE.png') !important}
+.flair-0-0{background-position:0 0}.flair-0-1{background:-90px 0}.flair-0-2{background:-180px 0}.flair-0-3{background:-270px 0}.flair-0-4{background:-360px 0}.flair-0-5{background:-450px 0}.flair-0-6{background:-540px 0}.flair-0-7{background:-630px 0}.flair-0-8{background:-720px 0}.flair-0-9{background:-810px 0}
+.flair-1-0{background:0 -30px}.flair-1-1{background:-90px -30px}.flair-1-2{background:-180px -30px}.flair-1-3{background:-270px -30px}.flair-1-4{background:-360px -30px}.flair-1-5{background:-450px -30px}.flair-1-6{background:-540px -30px}.flair-1-7{background:-630px -30px}.flair-1-8{background:-720px -30px}.flair-1-9{background:-810px -30px}
+.flair-2-0{background:0 -60px}.flair-2-1{background:-90px -60px}.flair-2-2{background:-180px -60px}.flair-2-3{background:-270px -60px}.flair-2-4{background:-360px -60px}.flair-2-5{background:-450px -60px}.flair-2-6{background:-540px -60px}.flair-2-7{background:-630px -60px}.flair-2-8{background:-720px -60px}.flair-2-9{background:-810px -60px}
+.flair-3-0{background:0 -90px}.flair-3-1{background:-90px -90px}.flair-3-2{background:-180px -90px}.flair-3-3{background:-270px -90px}.flair-3-4{background:-360px -90px}.flair-3-5{background:-450px -90px}.flair-3-6{background:-540px -90px}.flair-3-7{background:-630px -90px}.flair-3-8{background:-720px -90px}.flair-3-9{background:-810px -90px}
+.flair-4-0{background:0 -120px}.flair-4-1{background:-90px -120px}.flair-4-2{background:-180px -120px}.flair-4-3{background:-270px -120px}.flair-4-4{background:-360px -120px}.flair-4-5{background:-450px -120px}.flair-4-6{background:-540px -120px}.flair-4-7{background:-630px -120px}.flair-4-8{background:-720px -120px}.flair-4-9{background:-810px -120px}
+.flair-5-0{background:0 -150px}.flair-5-1{background:-90px -150px}.flair-5-2{background:-180px -150px}.flair-5-3{background:-270px -150px}.flair-5-4{background:-360px -150px}.flair-5-5{background:-450px -150px}.flair-5-6{background:-540px -150px}.flair-5-7{background:-630px -150px}.flair-5-8{background:-720px -150px}.flair-5-9{background:-810px -150px}
+.flair-6-0{background:0 -180px}.flair-6-1{background:-90px -180px}.flair-6-2{background:-180px -180px}.flair-6-3{background:-270px -180px}.flair-6-4{background:-360px -180px}.flair-6-5{background:-450px -180px}.flair-6-6{background:-540px -180px}.flair-6-7{background:-630px -180px}.flair-6-8{background:-720px -180px}.flair-6-9{background:-810px -180px}
+.flair-7-0{background:0 -210px}.flair-7-1{background:-90px -210px}.flair-7-2{background:-180px -210px}.flair-7-3{background:-270px -210px}.flair-7-4{background:-360px -210px}.flair-7-5{background:-450px -210px}.flair-7-6{background:-540px -210px}.flair-7-7{background:-630px -210px}.flair-7-8{background:-720px -210px}.flair-7-9{background:-810px -210px}
+.flair-8-0{background:0 -240px}.flair-8-1{background:-90px -240px}.flair-8-2{background:-180px -240px}.flair-8-3{background:-270px -240px}.flair-8-4{background:-360px -240px}.flair-8-5{background:-450px -240px}.flair-8-6{background:-540px -240px}.flair-8-7{background:-630px -240px}.flair-8-8{background:-720px -240px}.flair-8-9{background:-810px -240px}
+.flair-9-0{background:0 -270px}.flair-9-1{background:-90px -270px}.flair-9-2{background:-180px -270px}.flair-9-3{background:-270px -270px}.flair-9-4{background:-360px -270px}.flair-9-5{background:-450px -270px}.flair-9-6{background:-540px -270px}.flair-9-7{background:-630px -270px}.flair-9-8{background:-720px -270px}.flair-9-9{background:-810px -270px}
+.flair-10-0{background:0 -300px}.flair-10-1{background:-90px -300px}.flair-10-2{background:-180px -300px}.flair-10-3{background:-270px -300px}.flair-10-4{background:-360px -300px}.flair-10-5{background:-450px -300px}.flair-10-6{background:-540px -300px}.flair-10-7{background:-630px -300px}.flair-10-8{background:-720px -300px}.flair-10-9{background:-810px -300px}
+.flair-11-0{background:0 -330px}.flair-11-1{background:-90px -330px}.flair-11-2{background:-180px -330px}.flair-11-3{background:-270px -330px}.flair-11-4{background:-360px -330px}.flair-11-5{background:-450px -330px}.flair-11-6{background:-540px -330px}.flair-11-7{background:-630px -330px}.flair-11-8{background:-720px -330px}.flair-11-9{background:-810px -330px}
+.flair-AdeptusAstartes{background-image:url(%%AdeptusAstartes%%) !important}
+.flair-BloodAngels{background-image:url(%%BloodAngels%%) !important}
+.flair-DarkAngels{background-image:url(%%DarkAngels%%) !important}
+.flair-ImperialFists{background-image:url(%%ImperialFists%%) !important}
+.flair-IronHands{background-image:url(%%IronHands%%) !important}
+.flair-RavenGuard{background-image:url(%%RavenGuard%%) !important}
+.flair-RenegadeChapters{background-image:url(%%RenegadeChapters%%) !important}
+.flair-Salamanders{background-image:url(%%Salamanders%%) !important}
+.flair-SpaceWolves{background-image:url(%%SpaceWolves%%) !important}
+.flair-Ultramarines{background-image:url(%%Ultramarines%%) !important}
+.flair-UnknownFoundings{background-image:url(%%UnknownFoundings%%) !important}
+.flair-WhiteScars{background-image:url(%%WhiteScars%%) !important}
+.flair-AdeptusSororitas{background-image:url(%%AdeptusSororitas%%) !important}
+.flair-AdeptusTerra{background-image:url(%%AdeptusTerra%%) !important}
+.flair-CollegiaTitanica{background-image:url(%%CollegiaTitanica%%) !important}
+.flair-Inquisition{background-image:url(%%Inquisition%%) !important}
+.flair-OfficioAssassinorum{background-image:url(%%OfficioAssassinorum%%) !important}
+.flair-AstraMilitarum{background-image:url(%%AstraMilitarum%%) !important}
+.flair-TempestusScions{background-image:url(%%TempestusScions%%) !important}
+.flair-UnknownRegiments{background-image:url(%%UnknownRegiments%%) !important}
+.flair-ChaosGods{background-image:url(%%ChaosGods%%) !important}
+.flair-ChaosLegions{background-image:url(%%ChaosLegions%%) !important}
+.flair-ChaosWarbands{background-image:url(%%ChaosWarbands%%) !important}
+.flair-TraitorTitanLegions{background-image:url(%%TraitorTitanLegions%%) !important}
+.flair-Craftworlds{background-image:url(%%Craftworlds%%) !important}
+.flair-DarkEldar{background-image:url(%%DarkEldar%%) !important}
+.flair-Harlequins{background-image:url(%%Harlequins%%) !important}
+.flair-Runes{background-image:url(%%Runes%%) !important}
+.flair-Necrons{background-image:url(%%Necrons%%) !important}
+.flair-Orks{background-image:url(%%Orks%%) !important}
+.flair-Tau{background-image:url(%%Tau%%) !important}
+.flair-Tyranids{background-image:url(%%Tyranids%%) !important}

@@ -41,7 +41,7 @@ js_output = "/* FLAIR MASTER CONFIG | auto-generated at " + \
 # ------------------------------------------------------------------------------------------
 
 # The width and height of an individual sprite in pixels.
-FLAIR_WIDTH   = 80
+FLAIR_WIDTH   = 90
 FLAIR_HEIGHT  = 30
 
 # The number of sprites in a sprite sheet row, and the max height of a sprite sheet.
@@ -110,7 +110,7 @@ sheet_source  = [
     'https://b.thumbs.redditmedia.com/080Qa2OxvEppttSVZSWXAtd7qThVt6D1h2wAAtqvyZs.png', # ChaosLegions
     'https://b.thumbs.redditmedia.com/PNMKlkJJQ3BcI63ElqeX0qo403-5sUpDwtOowWHbMtY.png', # ChaosWarbands
     'https://b.thumbs.redditmedia.com/nkiLz41xgOxFGv1md03sxd3ZaL1-BPUWZIMb3m6-tqM.png', # TraitorTitanLegions
-    'https://b.thumbs.redditmedia.com/4i0I49l26T81Jc33OL1Y1C5Q22rRgzUhZC7Ga70AKxI.png', # CraftWorlds
+    'https://b.thumbs.redditmedia.com/uxEt1f9nNLBsQExgJG753OqaLr-h8MaDck7Z2h6ICKE.png', # Craftworlds
     'https://b.thumbs.redditmedia.com/11pLhmSGSYwAJGTEL6-UIvRV_8DwCM_paJuMaDrT6PE.png', # DarkEldar
     'https://b.thumbs.redditmedia.com/Sh8kyHzlRoxfGv26fWYrlB5z5jupQ9p1nEDSRYrbMvY.png', # Harlequins
     'https://a.thumbs.redditmedia.com/-VMndSBYcyloXZ--1d1EiDcddrOcOCKE06ugCTD4tO4.png', # Runes
@@ -147,7 +147,7 @@ counts = [
     32, # ChaosLegions
     6, # ChaosWarbands
     5, # TraitorTitanLegions
-    14, # CraftWorlds
+    15, # Craftworlds
     18, # DarkEldar
     12, # Harlequins
     6, # Runes

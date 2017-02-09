@@ -24,12 +24,13 @@ body {
 
 .wrapper {
     width: 100%;
-    max-width: 792px;
+    max-width: 900px;
     display: block;
     position: relative;
     margin: 0 auto;
     margin-top: 20px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .wrapper:not(.no-style) {
@@ -184,10 +185,9 @@ button, input[type=submit] {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
-    width: 80px;
+    width: 90px;
     height: 30px;
     cursor: pointer;
-    margin: 6px 2px;
     position: relative;
 }
 .flair:not([class*='flair-']) {

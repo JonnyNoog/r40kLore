@@ -561,7 +561,7 @@ flair_etc = [
             ('', True, "Legio Survurtoras (Fire Masters)")
         ]
     }),
-    ('Eldar Xenos', { # TODO: Fix this one.
+    ('Craftworlds Eldar Xenos', {
         1: [
             ('', True, "Eldar"),
             ('', True, "Eldar"),
@@ -582,7 +582,7 @@ flair_etc = [
             ('', True, "Yme-Loc")
         ]
     }),
-    ('Eldar Runes Xenos', {
+    ('Runes Eldar Xenos', {
         1: [
             ('', True, "Death Jester"),
             ('', True, "Shadowseer"),

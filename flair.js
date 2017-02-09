@@ -1,15 +1,15 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-02-09T19:58:27-0700 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-02-10T09:44:40-0700 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
             var data = key.split(' ');
             var spritepos = data.shift();
             var flairClasses = ' flair-' + spritepos;
+            flairClasses += ' flair-' + data[0];
             var categories = '';
 
             for (var i = 0; i < data.length; i++)
             {
-                flairClasses += ' flair-' + data[i];
                 categories += data[i];
             }
 

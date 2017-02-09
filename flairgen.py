@@ -13,11 +13,11 @@ load_by_id = """
             var data = key.split(' ');
             var spritepos = data.shift();
             var flairClasses = ' flair-' + spritepos;
+            flairClasses += ' flair-' + data[0];
             var categories = '';
 
             for (var i = 0; i < data.length; i++)
             {
-                flairClasses += ' flair-' + data[i];
                 categories += data[i];
             }
 

@@ -136,7 +136,7 @@ counts = [
     115, # UnknownFoundings
     11, # WhiteScars
     8, # AdeptusSororitas
-    26, # AdeptusTerra
+    17, # AdeptusTerra
     13, # CollegiaTitanica
     12, # Inquisition
     7, # OfficioAssassinorum

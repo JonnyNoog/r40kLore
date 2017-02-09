@@ -7,33 +7,22 @@ FLAIR_ETC = [
             ('', True, "Adeptus Terra"),
             ('', True, "Adeptus Administratum"),
             ('', True, "Adeptus Arbites"),
-            ('', True, "Adeptus Astartes"),
             ('', True, "Adeptus Astra Telepathica"),
             ('', True, "Adeptus Astronomica"),
-            ('', True, "Adeptus Custodes")
+            ('', True, "Adeptus Custodes"),
+            ('', True, "Adeptus Mechanicus")
         ],
         2: [
-            ('', True, "Adeptus Mechanicus"),
             ('', True, "Adeptus Ministorum"),
-            ('', True, "Adeptus Sororitas"),
-            ('', True, "Adeptus Sororitas"),
-            ('', True, "Astra Militarum"),
-            ('', True, "Collegia Titanica"),
             ('', True, "Imperial Fleet"),
             ('', True, "Imperial Navy"),
-            ('', True, "Inquisition"),
-            ('', True, "Navis Nobilite")
-        ],
-        3: [
-            ('', True, "Officio Assassinorum"),
-            ('', True, "Officio Assassinorum"),
-            ('', True, "Officio Assassinorum"),
+            ('', True, "Navis Nobilite"),
             ('', True, "Rogue Traders"),
             ('', True, "CRogue Traders"),
             ('', True, "Thunder Warriors")
         ]
     }),
-    ('AdeptusAstartes ImperiumOfMan', {
+    ('AdeptusAstartes AdeptusTerra ImperiumOfMan', {
         1: [
             ('', True, "Adeptus Astartes")
         ]
@@ -383,7 +372,7 @@ FLAIR_ETC = [
     }),
     ('AstraMilitarum ImperiumOfMan', {
         1: [
-            ('', True, "Astra Militarum"),
+            ('AdeptusTerra', True, "Astra Militarum"),
             ('', True, "1st Kronus Regiment"),
             ('', True, "5th Arcadian Regiment"),
             ('', True, "7th Mordian Regiment"),
@@ -433,8 +422,8 @@ FLAIR_ETC = [
     }),
     ('AdeptusSororitas ImperiumOfMan', {
         1: [
-            ('', True, "Adeptus Sororitas"),
-            ('', True, "Adeptus Sororitas"),
+            ('AdeptusTerra', True, "Adeptus Sororitas"),
+            ('AdeptusTerra', True, "Adeptus Sororitas"),
             ('', True, "Order Of Our Martyred Lady"),
             ('', True, "Order of the Argent Shroud"),
             ('', True, "Order of the Bloody Rose"),
@@ -445,7 +434,7 @@ FLAIR_ETC = [
     }),
     ('CollegiaTitanica ImperiumOfMan', {
         1: [
-            ('', True, "Collegia Titanica"),
+            ('AdeptusTerra', True, "Collegia Titanica"),
             ('', True, "Imperial Fists (Titan Legion)"),
             ('', True, "Imperial Hunters"),
             ('', True, "Lefio Atorum (Warp Runners)"),
@@ -463,7 +452,7 @@ FLAIR_ETC = [
     }),
     ('Inquisition ImperiumOfMan', {
         1: [
-            ('', True, "Inquisition"),
+            ('AdeptusTerra', True, "Inquisition"),
             ('', True, "Inquisition"),
             ('', True, "Inquisition"),
             ('', True, "Inquisition"),
@@ -481,9 +470,9 @@ FLAIR_ETC = [
     }),
     ('OfficioAssassinorum ImperiumOfMan', {
         1: [
-            ('', True, "Officio Assassinorum"),
-            ('', True, "Officio Assassinorum"),
-            ('', True, "Officio Assassinorum"),
+            ('AdeptusTerra', True, "Officio Assassinorum"),
+            ('AdeptusTerra', True, "Officio Assassinorum"),
+            ('AdeptusTerra', True, "Officio Assassinorum"),
             ('', True, "Callidus Temple"),
             ('', True, "Cullexus Temple"),
             ('', True, "Eversor Temple"),

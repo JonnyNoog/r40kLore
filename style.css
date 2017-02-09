@@ -30,7 +30,6 @@ body {
     margin: 0 auto;
     margin-top: 20px;
     box-sizing: border-box;
-    text-align: center;
 }
 
 .wrapper:not(.no-style) {
@@ -42,6 +41,11 @@ body {
 }
 .wrapper.no-pad, .wrapper.no-pad:not(.no-style) {
     padding: 0;
+}
+
+#flair-choices {
+    width: 93%;
+    margin: auto;
 }
 
 .spacer {

@@ -42,8 +42,8 @@ FLAIR_ETC = [
         1: [
             ('', True, "Dark Angels"),
             ('', True, "Dark Angels"),
-            ('', True, "Deathing"),
-            ('', True, "Deathing"),
+            ('', True, "Deathwing"),
+            ('', True, "Deathwing"),
             ('', True, "Ravenwing"),
             ('', True, "Ravenwing"),
             ('', True, "Angels of Absolution"),

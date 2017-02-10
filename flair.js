@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-02-10T09:44:40-0700 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-02-10T20:41:53-0700 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -57,8 +57,8 @@ flair.names = {
     "0-9 DarkAngels AdeptusAstartes ImperiumOfMan": "Angels of Vigilance",
     "1-0 DarkAngels AdeptusAstartes ImperiumOfMan": "Consecrators",
     "1-1 DarkAngels AdeptusAstartes ImperiumOfMan": "Disciples of Caliban",
-    "1-2 DarkAngels AdeptusAstartes ImperiumOfMan": "Officio Assassinorum",
-    "1-3 DarkAngels AdeptusAstartes ImperiumOfMan": "Guardians of the Covenant",
+    "1-2 DarkAngels AdeptusAstartes ImperiumOfMan": "Guardians of the Covenant",
+    "1-3 DarkAngels AdeptusAstartes ImperiumOfMan": "Unforgiven",
     "0-0 WhiteScars AdeptusAstartes ImperiumOfMan": "White Scars",
     "0-1 WhiteScars AdeptusAstartes ImperiumOfMan": "White Scars",
     "0-2 WhiteScars AdeptusAstartes ImperiumOfMan": "White Scars",

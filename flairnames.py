@@ -43,8 +43,8 @@ FLAIR_ETC = [
         2: [
             ('', True, "Consecrators"),
             ('', True, "Disciples of Caliban"),
-            ('', True, "Officio Assassinorum"),
-            ('', True, "Guardians of the Covenant")
+            ('', True, "Guardians of the Covenant"),
+            ('', True, "Unforgiven")
         ]
     }),
     ('WhiteScars AdeptusAstartes ImperiumOfMan', {

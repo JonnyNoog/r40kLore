@@ -99,7 +99,7 @@ sheet_source  = [
     'https://b.thumbs.redditmedia.com/bhAs4BcwPek_ixWxXpIYq20VcYPZlNbU0MJHa9FUIZU.png', # UnknownFoundings
     'https://b.thumbs.redditmedia.com/EvfHxS4Dea8OcpSrXedolWAtcEGR_gbQr8gu_j7YvuA.png', # WhiteScars
     'https://b.thumbs.redditmedia.com/3zxEaYA0xtRkwaqT4KjqgTq5SuZotwCWw9azAeUkCpw.png', # AdeptusSororitas
-    'https://a.thumbs.redditmedia.com/jEZFrBpwc1pv1JgV8DTlok4qlWEix_mS3hb4pbVr9u8.png', # AdeptusTerra
+    'https://b.thumbs.redditmedia.com/X2kPtTaK8IWq3xpEFFYyWSnOsQeHwaLS0mtEhmapAGQ.png', # AdeptusTerra
     'https://b.thumbs.redditmedia.com/i5W56e1tB7KZAMVw3HOx-Mnv1i_FEMiPZd4MYZqcEgM.png', # CollegiaTitanica
     'https://b.thumbs.redditmedia.com/DRbAdhU-HZuL9YC4cGs9bFDleWKitsb-xeLllYDUuEk.png', # Inquisition
     'https://b.thumbs.redditmedia.com/eg1v3OZ20UhsNgF4Py_ml6elrW2AMvcIN1dUCTnJnZI.png', # OfficioAssassinorum
@@ -205,7 +205,6 @@ with open('./jonnynoog.github.io-flair.css', 'w+') as outfile:
 # ------------------------------------------------------------------------------------------
 
 js_output += 'flair.names = {' + "\n"
-js_output += "/* [STANDARD] */\n"
 
 for sheet_element in FLAIR_ETC:
     i = 0

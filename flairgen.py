@@ -81,7 +81,8 @@ sheets = [
     'Necrons',
     'Orks',
     'Tau',
-    'Tyranids'
+    'Tyranids',
+    'NonUserFlair'
 ]
 
 # Sprite sheet sources.

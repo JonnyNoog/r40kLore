@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-02-10T20:41:53-0700 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-02-15T09:27:52-0700 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -26,7 +26,6 @@ flair.loadById = function() {
 }
 flair.byId = {}
 flair.names = {
-/* [STANDARD] */
     "0-0 AdeptusTerra ImperiumOfMan": "Imperium of Man",
     "0-1 AdeptusTerra ImperiumOfMan": "Imperium of Man",
     "0-2 AdeptusTerra ImperiumOfMan": "Imperium of Man",

@@ -49,7 +49,7 @@ SPRITE_WIDTH  = 10
 SPRITE_HEIGHT = 12
 
 # List of sprite sheets.
-sheets = [
+SHEETS = [
     'AdeptusAstartes',
     'BloodAngels',
     'DarkAngels',
@@ -122,43 +122,6 @@ sheet_source  = [
     'https://a.thumbs.redditmedia.com/CpxEQNXKqW34duUlVSWBAhxVKYYX-1HWwCjNI9cg164.png', # NonUserFlair
 ]
 
-# The number of flair images on each sheet.
-counts = [
-    1, # AdeptusAstartes
-    16, # BloodAngels
-    14, # DarkAngels
-    21, # ImperialFists
-    8, # IronHands
-    15, # RavenGuard
-    6, # RenegadeChapters
-    4, # Salamanders
-    14, # SpaceWolves
-    33, # Ultramarines
-    115, # UnknownFoundings
-    11, # WhiteScars
-    8, # AdeptusSororitas
-    17, # AdeptusTerra
-    13, # CollegiaTitanica
-    12, # Inquisition
-    7, # OfficioAssassinorum
-    14, # AstraMilitarum
-    16, # TempestusScions
-    4, # UnknownRegiments
-    14, # ChaosGods
-    32, # ChaosLegions
-    6, # ChaosWarbands
-    5, # TraitorTitanLegions
-    15, # Craftworlds
-    18, # DarkEldar
-    12, # Harlequins
-    6, # Runes
-    10, # Necrons
-    18, # Orks
-    19, # Tau
-    2, # Tyranids
-    4, # NonUserFlair
-]
-
 # GENERATE CSS
 # ------------------------------------------------------------------------------------------
 
@@ -182,7 +145,7 @@ for i in range(0, SPRITE_HEIGHT):
 output_source = output
 
 i = 0
-for sheet in sheets:
+for sheet in SHEETS:
     output += '.flair-' + sheet + '{background-image:url(%%' + sheet + '%%) !important}'
     output += "\n"
 

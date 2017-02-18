@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-02-15T10:05:30-0700 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-02-18T13:45:59-0700 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -335,14 +335,14 @@ flair.names = {
     "1-3 TempestusScions AstraMilitarum ImperiumOfMan": "88th Alphic Lions",
     "1-4 TempestusScions AstraMilitarum ImperiumOfMan": "101st Betic Dragons",
     "1-5 TempestusScions AstraMilitarum ImperiumOfMan": "133rd Lambdan Lions",
-    "0-0 AdeptusSororitas ImperiumOfMan AdeptusTerra": "Adeptus Sororitas",
-    "0-1 AdeptusSororitas ImperiumOfMan AdeptusTerra": "Adeptus Sororitas",
-    "0-2 AdeptusSororitas ImperiumOfMan": "Order Of Our Martyred Lady",
-    "0-3 AdeptusSororitas ImperiumOfMan": "Order of the Argent Shroud",
-    "0-4 AdeptusSororitas ImperiumOfMan": "Order of the Bloody Rose",
-    "0-5 AdeptusSororitas ImperiumOfMan": "Order of the Ebon Chalice",
-    "0-6 AdeptusSororitas ImperiumOfMan": "Order of the Sacred Rose",
-    "0-7 AdeptusSororitas ImperiumOfMan": "Order of the Valorous Heart",
+    "0-0 AdeptaSororitas ImperiumOfMan AdeptusTerra": "Adepta Sororitas",
+    "0-1 AdeptaSororitas ImperiumOfMan AdeptusTerra": "Adepta Sororitas",
+    "0-2 AdeptaSororitas ImperiumOfMan": "Order Of Our Martyred Lady",
+    "0-3 AdeptaSororitas ImperiumOfMan": "Order of the Argent Shroud",
+    "0-4 AdeptaSororitas ImperiumOfMan": "Order of the Bloody Rose",
+    "0-5 AdeptaSororitas ImperiumOfMan": "Order of the Ebon Chalice",
+    "0-6 AdeptaSororitas ImperiumOfMan": "Order of the Sacred Rose",
+    "0-7 AdeptaSororitas ImperiumOfMan": "Order of the Valorous Heart",
     "0-0 CollegiaTitanica ImperiumOfMan AdeptusTerra": "Collegia Titanica",
     "0-1 CollegiaTitanica ImperiumOfMan": "Imperial Fists (Titan Legion)",
     "0-2 CollegiaTitanica ImperiumOfMan": "Imperial Hunters",

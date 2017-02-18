@@ -420,10 +420,10 @@ FLAIR_ETC = [
             ('', True, "133rd Lambdan Lions")
         ]
     }),
-    ('AdeptusSororitas ImperiumOfMan', {
+    ('AdeptaSororitas ImperiumOfMan', {
         1: [
-            ('AdeptusTerra', True, "Adeptus Sororitas"),
-            ('AdeptusTerra', True, "Adeptus Sororitas"),
+            ('AdeptusTerra', True, "Adepta Sororitas"),
+            ('AdeptusTerra', True, "Adepta Sororitas"),
             ('', True, "Order Of Our Martyred Lady"),
             ('', True, "Order of the Argent Shroud"),
             ('', True, "Order of the Bloody Rose"),

@@ -62,7 +62,7 @@ SHEETS = [
     'Ultramarines',
     'UnknownFoundings',
     'WhiteScars',
-    'AdeptusSororitas',
+    'AdeptaSororitas',
     'AdeptusTerra',
     'CollegiaTitanica',
     'Inquisition',
@@ -99,7 +99,7 @@ sheet_source  = [
     'https://b.thumbs.redditmedia.com/aaCDsPCaZplYoMefS-W5LX_HwxGeEcKc5EOn-JCDqro.png', # Ultramarines
     'https://b.thumbs.redditmedia.com/bhAs4BcwPek_ixWxXpIYq20VcYPZlNbU0MJHa9FUIZU.png', # UnknownFoundings
     'https://b.thumbs.redditmedia.com/EvfHxS4Dea8OcpSrXedolWAtcEGR_gbQr8gu_j7YvuA.png', # WhiteScars
-    'https://b.thumbs.redditmedia.com/3zxEaYA0xtRkwaqT4KjqgTq5SuZotwCWw9azAeUkCpw.png', # AdeptusSororitas
+    'https://b.thumbs.redditmedia.com/3zxEaYA0xtRkwaqT4KjqgTq5SuZotwCWw9azAeUkCpw.png', # AdeptaSororitas
     'https://b.thumbs.redditmedia.com/X2kPtTaK8IWq3xpEFFYyWSnOsQeHwaLS0mtEhmapAGQ.png', # AdeptusTerra
     'https://b.thumbs.redditmedia.com/i5W56e1tB7KZAMVw3HOx-Mnv1i_FEMiPZd4MYZqcEgM.png', # CollegiaTitanica
     'https://b.thumbs.redditmedia.com/DRbAdhU-HZuL9YC4cGs9bFDleWKitsb-xeLllYDUuEk.png', # Inquisition

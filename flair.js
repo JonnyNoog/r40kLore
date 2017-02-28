@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-02-18T13:45:59-0700 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-02-28T13:00:10-0700 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -346,15 +346,16 @@ flair.names = {
     "0-0 CollegiaTitanica ImperiumOfMan AdeptusTerra": "Collegia Titanica",
     "0-1 CollegiaTitanica ImperiumOfMan": "Imperial Fists (Titan Legion)",
     "0-2 CollegiaTitanica ImperiumOfMan": "Imperial Hunters",
-    "0-3 CollegiaTitanica ImperiumOfMan": "Lefio Atorum (Warp Runners)",
+    "0-3 CollegiaTitanica ImperiumOfMan": "Legio Astorum (Warp Runners)",
     "0-4 CollegiaTitanica ImperiumOfMan": "Legio Astraman (Morning Star)",
     "0-5 CollegiaTitanica ImperiumOfMan": "Legio Atarus (Firebrands)",
     "0-6 CollegiaTitanica ImperiumOfMan": "Legio Crucius (Warmongers)",
     "0-7 CollegiaTitanica ImperiumOfMan": "Legio Gryphonicus (War Griffons)",
-    "0-8 CollegiaTitanica ImperiumOfMan": "Legio Ignatum (Fire Wasps)",
-    "0-9 CollegiaTitanica ImperiumOfMan": "Lego Metalica (Iron SKulls)",
-    "1-0 CollegiaTitanica ImperiumOfMan": "Legio Tempestus",
-    "1-1 CollegiaTitanica ImperiumOfMan": "Nova Guard",
+    "0-8 CollegiaTitanica ImperiumOfMan": "Legio Honorum (Death Bolts)",
+    "0-9 CollegiaTitanica ImperiumOfMan": "Legio Ignatum (Fire Wasps)",
+    "1-0 CollegiaTitanica ImperiumOfMan": "Lego Metalica (Iron Skulls)",
+    "1-1 CollegiaTitanica ImperiumOfMan": "Legio Tempestus",
+    "1-2 CollegiaTitanica ImperiumOfMan": "Nova Guard",
     "0-0 Inquisition ImperiumOfMan AdeptusTerra": "Inquisition",
     "0-1 Inquisition ImperiumOfMan": "Inquisition",
     "0-2 Inquisition ImperiumOfMan": "Inquisition",

@@ -437,15 +437,16 @@ FLAIR_ETC = [
             ('AdeptusTerra', True, "Collegia Titanica"),
             ('', True, "Imperial Fists (Titan Legion)"),
             ('', True, "Imperial Hunters"),
-            ('', True, "Lefio Atorum (Warp Runners)"),
+            ('', True, "Legio Astorum (Warp Runners)"),
             ('', True, "Legio Astraman (Morning Star)"),
             ('', True, "Legio Atarus (Firebrands)"),
             ('', True, "Legio Crucius (Warmongers)"),
             ('', True, "Legio Gryphonicus (War Griffons)"),
-            ('', True, "Legio Ignatum (Fire Wasps)"),
-            ('', True, "Lego Metalica (Iron SKulls)")
+            ('', True, "Legio Honorum (Death Bolts)"),
+            ('', True, "Legio Ignatum (Fire Wasps)")
         ],
         2: [
+            ('', True, "Lego Metalica (Iron Skulls)"),
             ('', True, "Legio Tempestus"),
             ('', True, "Nova Guard")
         ]

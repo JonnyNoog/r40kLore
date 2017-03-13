@@ -171,15 +171,9 @@ with open('./jonnynoog.github.io-flair.css', 'w+') as outfile:
 js_output += 'flair.names = {' + "\n"
 
 for sheet_element in FLAIR_ETC:
-    i = 0
     categories = sheet_element[0]
     sheet_data = sheet_element[1]
     last_sheet_element = False
-
-    if i == len(FLAIR_ETC) - 1:
-        last_sheet_element = True
-
-    i += 1
 
     for line_number, sprite_map in sheet_data.items():
         j = 0
@@ -190,21 +184,22 @@ for sheet_element in FLAIR_ETC:
             string_ending = '",'
             last_item = False
 
-            if j == len(sprite_map) - 1:
-                last_item = True
-
-            if last_sheet_element and last_item:
-                string_ending = '"'
-
             if individual_categories:
                 individual_categories = ' ' + individual_categories
 
-            if enabled:
-                js_output += '    "' + str(line_number -1) + '-' + str(j) + ' ' + \
-                categories + individual_categories + '": "' + flair_name + string_ending
-                js_output += "\n"
+            if not enabled:
+                js_output += '//'
+
+            js_output += '    "' + str(line_number -1) + '-' + str(j) + ' ' + \
+            categories + individual_categories + '": "' + flair_name + '",'
+            js_output += "\n"
 
             j += 1
+
+# Strip last comma.
+js_output_list = list(js_output)
+js_output_list[-2] = ''
+js_output = "".join(js_output_list)
 
 js_output += '};'
 

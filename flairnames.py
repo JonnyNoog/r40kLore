@@ -693,10 +693,10 @@ FLAIR_ETC = [
     }),
     ('NonUserFlair', {
         1: [
-            ('', True, "Emperor of Mankind"),
-            ('', True, "High Lords of Terra"),
-            ('', True, "Great Wolf"),
-            ('', True, "Black Library")
+            ('', False, "Emperor of Mankind"),
+            ('', False, "High Lords of Terra"),
+            ('', False, "Great Wolf"),
+            ('', False, "Black Library")
         ]
     }),
 ]

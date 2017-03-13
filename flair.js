@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-02-28T13:00:10-0700 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-03-14T09:49:43-0700 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -524,8 +524,8 @@ flair.names = {
     "1-8 Tau Xenos": "Farsight Enclaves",
     "0-0 Tyranids Xenos": "Tyranids",
     "0-1 Tyranids Xenos": "Tyranids",
-    "0-0 NonUserFlair": "Emperor of Mankind",
-    "0-1 NonUserFlair": "High Lords of Terra",
-    "0-2 NonUserFlair": "Great Wolf",
-    "0-3 NonUserFlair": "Black Library",
+//    "0-0 NonUserFlair": "Emperor of Mankind",
+//    "0-1 NonUserFlair": "High Lords of Terra",
+//    "0-2 NonUserFlair": "Great Wolf",
+//    "0-3 NonUserFlair": "Black Library"
 };

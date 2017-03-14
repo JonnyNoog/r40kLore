@@ -103,7 +103,7 @@ sheet_source  = [
     'https://b.thumbs.redditmedia.com/X2kPtTaK8IWq3xpEFFYyWSnOsQeHwaLS0mtEhmapAGQ.png', # AdeptusTerra
     'https://b.thumbs.redditmedia.com/i5W56e1tB7KZAMVw3HOx-Mnv1i_FEMiPZd4MYZqcEgM.png', # CollegiaTitanica
     'https://b.thumbs.redditmedia.com/DRbAdhU-HZuL9YC4cGs9bFDleWKitsb-xeLllYDUuEk.png', # Inquisition
-    'https://b.thumbs.redditmedia.com/eg1v3OZ20UhsNgF4Py_ml6elrW2AMvcIN1dUCTnJnZI.png', # OfficioAssassinorum
+    'https://b.thumbs.redditmedia.com/iOIgll75tanbpjGHFSItYiA0UCcR4Pz1hs0qjJ-TYtc.png', # OfficioAssassinorum
     'https://b.thumbs.redditmedia.com/A_lvapk67E9l8xHiSz2wqIhtm_fKGXhfTrK8KHfX36A.png', # AstraMilitarum
     'https://a.thumbs.redditmedia.com/OD-ZLpuMrCKL-onTuG3CkQ-2HKd0bAodpc_yNgzKjq8.png', # TempestusScions
     'https://b.thumbs.redditmedia.com/NklHyYWkZjxCvLRSEdqOl1HY_fPP3R9uYSyz0YN61-w.png', # UnknownRegiments

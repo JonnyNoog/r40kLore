@@ -18,7 +18,7 @@ FLAIR_ETC = [
             ('', True, "Imperial Navy"),
             ('', True, "Navis Nobilite"),
             ('', True, "Rogue Traders"),
-            ('', True, "CRogue Traders"),
+            ('', True, "Rogue Traders"),
             ('', True, "Thunder Warriors")
         ]
     }),

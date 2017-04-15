@@ -497,7 +497,7 @@ FLAIR_ETC = [
             ('', True, "Tzeentch"),
             ('', True, "Tzeentch"),
             ('', True, "Tzeentch"),
-            ('', True, "Milal")
+            ('', True, "Malal")
         ]
     }),
     ('ChaosLegions Chaos', {

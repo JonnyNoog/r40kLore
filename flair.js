@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-03-17T16:47:40-0700 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-04-15T13:40:34-0800 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -388,7 +388,7 @@ flair.names = {
     "1-0 ChaosGods Chaos": "Tzeentch",
     "1-1 ChaosGods Chaos": "Tzeentch",
     "1-2 ChaosGods Chaos": "Tzeentch",
-    "1-3 ChaosGods Chaos": "Milal",
+    "1-3 ChaosGods Chaos": "Malal",
     "0-0 ChaosLegions Chaos": "Emperor's Children",
     "0-1 ChaosLegions Chaos": "Emperor's Children",
     "0-2 ChaosLegions Chaos": "Emperor's Children",

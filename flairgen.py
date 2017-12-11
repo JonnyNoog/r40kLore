@@ -119,7 +119,7 @@ sheet_source  = [
     'https://b.thumbs.redditmedia.com/1jSVyVr-lepqMllWRR_Pt015zfKNcwE18L71sCQIrWc.png', # Orks
     'https://b.thumbs.redditmedia.com/25kvPiYmKXYMZauyUI8Rn98lDtSsEv73h34VVVW__OY.png', # Tau
     'https://b.thumbs.redditmedia.com/jMKyshU4ctkoPlGfMUtWXg1uVGzC1408MCiuHuXZIZA.png', # Tyranids
-    'https://a.thumbs.redditmedia.com/CpxEQNXKqW34duUlVSWBAhxVKYYX-1HWwCjNI9cg164.png', # NonUserFlair
+    'https://b.thumbs.redditmedia.com/KqOl1Bg3iGgex-etY68h0xXrbNPFEYw6_YmQYk-pSEk.png', # NonUserFlair
 ]
 
 # GENERATE CSS

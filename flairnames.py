@@ -696,7 +696,9 @@ FLAIR_ETC = [
             ('', False, "Emperor of Mankind"),
             ('', False, "High Lords of Terra"),
             ('', False, "Great Wolf"),
-            ('', False, "Black Library")
+            ('', False, "Black Library"),
+            ('', False, "Remembrancers"),
+            ('', False, "Crux Terminatus")
         ]
     }),
 ]

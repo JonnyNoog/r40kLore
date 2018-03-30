@@ -45,7 +45,7 @@ flair.updateFilter = function(text) {
         }
     }
 
-    var fn_hashUpdate = function() {
+    var hashUpdate = function() {
         var hash = "#";
 
         if (text.length != 0) {
@@ -67,13 +67,13 @@ flair.updateFilter = function(text) {
     // For the text filter, we should wait for the user to be done typing.
     if (flair.categoryFilterChange) {
         flair.categoryFilterChange = false;
-        fn_hashUpdate();
+        hashUpdate();
     } else {
         if (flair.typingTimeout) {
             clearTimeout(flair.typingTimeout);
         }
 
-        flair.typingTimeout = setTimeout(fn_hashUpdate, 600);
+        flair.typingTimeout = setTimeout(hashUpdate, 600);
     }
 
 }
@@ -99,16 +99,15 @@ flair.sendChoice = function() {
 
     var o = document.querySelectorAll('.sr-choice ');
     for (var i = 0, len = o.length; i < len; i++) {
-        var sr_name = o[i].getAttribute('data-name');
+        var subredditName = o[i].getAttribute('data-name');
         if (o[i].querySelector('input[type=checkbox]').checked) {
-            subreddits += sr_name + ' ';
+            subreddits += subredditName + ' ';
         }
     }
 
     window.open('http://www.reddit.com/message/compose/?to=40kLoreModServitor&subject='+
         flair.currentChoice+
-        '&message='+flair_text+'%0A'+
-        subreddits)
+        '&message='+flair_text)
 }
 
 flair.selectChoice = function(flairId, key) {

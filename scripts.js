@@ -84,18 +84,16 @@ flair.sendChoice = function() {
         return;
     }
 
-    flair_text = "";
+    // flair-selection-text not currently used.
+    flair_text = ''; // Needs to be something so the message body to contains something.
     var flair_text_element = encodeURIComponent(document.getElementById('flair-selection-text'));
 
     if (flair_text_element !== 'null') {
         flair_text = flair_text_element.value;
     }
 
+    // The subreddits variable is not currently used.
     var subreddits = '';
-
-    if (flair_text.length === 0) {
-        flair_text = '%0A';
-    }
 
     var o = document.querySelectorAll('.sr-choice ');
     for (var i = 0, len = o.length; i < len; i++) {
@@ -107,7 +105,8 @@ flair.sendChoice = function() {
 
     window.open('http://www.reddit.com/message/compose/?to=40kLoreModServitor&subject='+
         flair.currentChoice+
-        '&message='+flair_text)
+        '&message='+'In the grim darkness of the far future, there is only flair.')
+        //'&message='+flair_text+subreddits) // Use for targeting multiple subreddits.
 }
 
 flair.selectChoice = function(flairId, key) {

@@ -682,7 +682,8 @@ FLAIR_ETC = [
             ('', True, "T'olku"),
             ('', True, "Vash'ya"),
             ('', True, "Vior'la"),
-            ('', True, "Farsight Enclaves")
+            ('', True, "Farsight Enclaves"),
+            ('', True, "Kroot")
         ]
     }),
     ('Tyranids Xenos', {

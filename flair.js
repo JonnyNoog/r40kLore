@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-12-11T14:43:54-0700 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2019-08-31T17:52:32-0800 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -522,6 +522,7 @@ flair.names = {
     "1-6 Tau Xenos": "Vash'ya",
     "1-7 Tau Xenos": "Vior'la",
     "1-8 Tau Xenos": "Farsight Enclaves",
+    "1-9 Tau Xenos": "Kroot",
     "0-0 Tyranids Xenos": "Tyranids",
     "0-1 Tyranids Xenos": "Tyranids",
 //    "0-0 NonUserFlair": "Emperor of Mankind",

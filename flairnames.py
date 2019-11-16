@@ -448,7 +448,8 @@ FLAIR_ETC = [
         2: [
             ('', True, "Lego Metalica (Iron Skulls)"),
             ('', True, "Legio Tempestus"),
-            ('', True, "Nova Guard")
+            ('', True, "Nova Guard"),
+            ('', True, "Freeblade")
         ]
     }),
     ('Inquisition ImperiumOfMan', {
@@ -635,6 +636,30 @@ FLAIR_ETC = [
             ('', True, "Oroskh"),
             ('', True, "Oruscar"),
             ('', True, "Sautekh"),
+        ],
+        2: [
+            ('', True, "Agdagath"),
+            ('', True, "Atun"),
+            ('', True, "Charnovokh"),
+            ('', True, "Maynarkh"),
+            ('', True, "Mephrit"),
+            ('', True, "Necrons"),
+            ('', True, "Nepheru"),
+            ('', True, "Nephrekh"),
+            ('', True, "Nihilakh"),
+            ('', True, "Novokh"),
+        ],
+        3: [
+            ('', True, "Ogdobekh"),
+            ('', True, "Sarnekh"),
+            ('', True, "Sautekh"),
+            ('', True, "Sekemtar"),
+            ('', True, "Solemnace"),
+            ('', True, "Suhbekhar"),
+            ('', True, "Temeryn"),
+            ('', True, "Thokt"),
+            ('', True, "Triarch Praetorians"),
+            ('', True, "Vralekth"),
         ]
     }),
     ('Orks Xenos', {

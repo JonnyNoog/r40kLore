@@ -101,7 +101,7 @@ sheet_source  = [
     'https://b.thumbs.redditmedia.com/EvfHxS4Dea8OcpSrXedolWAtcEGR_gbQr8gu_j7YvuA.png', # WhiteScars
     'https://b.thumbs.redditmedia.com/3zxEaYA0xtRkwaqT4KjqgTq5SuZotwCWw9azAeUkCpw.png', # AdeptaSororitas
     'https://b.thumbs.redditmedia.com/X2kPtTaK8IWq3xpEFFYyWSnOsQeHwaLS0mtEhmapAGQ.png', # AdeptusTerra
-    'https://b.thumbs.redditmedia.com/i5W56e1tB7KZAMVw3HOx-Mnv1i_FEMiPZd4MYZqcEgM.png', # CollegiaTitanica
+    'https://b.thumbs.redditmedia.com/cKSBw2AkuaqhHGwN4dE-TZ6Hq9t11jfUJlcqIq9IkxU.png', # CollegiaTitanica
     'https://b.thumbs.redditmedia.com/DRbAdhU-HZuL9YC4cGs9bFDleWKitsb-xeLllYDUuEk.png', # Inquisition
     'https://b.thumbs.redditmedia.com/iOIgll75tanbpjGHFSItYiA0UCcR4Pz1hs0qjJ-TYtc.png', # OfficioAssassinorum
     'https://b.thumbs.redditmedia.com/A_lvapk67E9l8xHiSz2wqIhtm_fKGXhfTrK8KHfX36A.png', # AstraMilitarum
@@ -117,7 +117,7 @@ sheet_source  = [
     'https://a.thumbs.redditmedia.com/-VMndSBYcyloXZ--1d1EiDcddrOcOCKE06ugCTD4tO4.png', # Runes
     'https://a.thumbs.redditmedia.com/vEbjTduC63dXIVP7BXH0mtTYcH_5SxMlYAOOU265oS0.png', # Necrons
     'https://b.thumbs.redditmedia.com/1jSVyVr-lepqMllWRR_Pt015zfKNcwE18L71sCQIrWc.png', # Orks
-    'https://b.thumbs.redditmedia.com/25kvPiYmKXYMZauyUI8Rn98lDtSsEv73h34VVVW__OY.png', # Tau
+    'https://b.thumbs.redditmedia.com/rRYIMknktWyvPJqeskdYEDQAOAMRoU5Skufx9VcEKDk.png', # Tau
     'https://b.thumbs.redditmedia.com/jMKyshU4ctkoPlGfMUtWXg1uVGzC1408MCiuHuXZIZA.png', # Tyranids
     'https://b.thumbs.redditmedia.com/KqOl1Bg3iGgex-etY68h0xXrbNPFEYw6_YmQYk-pSEk.png', # NonUserFlair
 ]

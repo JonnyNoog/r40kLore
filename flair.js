@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2019-08-31T17:52:32-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2019-11-16T16:49:11-0700 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -356,6 +356,7 @@ flair.names = {
     "1-0 CollegiaTitanica ImperiumOfMan": "Lego Metalica (Iron Skulls)",
     "1-1 CollegiaTitanica ImperiumOfMan": "Legio Tempestus",
     "1-2 CollegiaTitanica ImperiumOfMan": "Nova Guard",
+    "1-3 CollegiaTitanica ImperiumOfMan": "Freeblade",
     "0-0 Inquisition ImperiumOfMan AdeptusTerra": "Inquisition",
     "0-1 Inquisition ImperiumOfMan": "Inquisition",
     "0-2 Inquisition ImperiumOfMan": "Inquisition",
@@ -486,6 +487,26 @@ flair.names = {
     "0-7 Necrons Xenos": "Oroskh",
     "0-8 Necrons Xenos": "Oruscar",
     "0-9 Necrons Xenos": "Sautekh",
+    "1-0 Necrons Xenos": "Agdagath",
+    "1-1 Necrons Xenos": "Atun",
+    "1-2 Necrons Xenos": "Charnovokh",
+    "1-3 Necrons Xenos": "Maynarkh",
+    "1-4 Necrons Xenos": "Mephrit",
+    "1-5 Necrons Xenos": "Necrons",
+    "1-6 Necrons Xenos": "Nepheru",
+    "1-7 Necrons Xenos": "Nephrekh",
+    "1-8 Necrons Xenos": "Nihilakh",
+    "1-9 Necrons Xenos": "Novokh",
+    "2-0 Necrons Xenos": "Ogdobekh",
+    "2-1 Necrons Xenos": "Sarnekh",
+    "2-2 Necrons Xenos": "Sautekh",
+    "2-3 Necrons Xenos": "Sekemtar",
+    "2-4 Necrons Xenos": "Solemnace",
+    "2-5 Necrons Xenos": "Suhbekhar",
+    "2-6 Necrons Xenos": "Temeryn",
+    "2-7 Necrons Xenos": "Thokt",
+    "2-8 Necrons Xenos": "Triarch Praetorians",
+    "2-9 Necrons Xenos": "Vralekth",
     "0-0 Orks Xenos": "Orks",
     "0-1 Orks Xenos": "Orks",
     "0-2 Orks Xenos": "Orks",

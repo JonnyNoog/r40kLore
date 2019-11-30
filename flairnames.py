@@ -24,7 +24,8 @@ FLAIR_ETC = [
     }),
     ('AdeptusAstartes AdeptusTerra ImperiumOfMan', {
         1: [
-            ('', True, "Adeptus Astartes")
+            ('', True, "Adeptus Astartes"),
+            ('', True, "Dreadnought")
         ]
     }),
     ('DarkAngels AdeptusAstartes ImperiumOfMan', {

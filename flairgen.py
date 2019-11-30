@@ -87,7 +87,7 @@ SHEETS = [
 
 # Sprite sheet sources.
 sheet_source  = [
-    'https://a.thumbs.redditmedia.com/bHByTaUzO7eeko5gWuknVafIPnaiyWB2GTP2iPlt1J4.png', # AdeptusAstartes
+    'https://a.thumbs.redditmedia.com/gbra2dsfBYhVL2xSoy0hu2Eo8OLrDgA7CR6qmKcM9Y0.png', # AdeptusAstartes
     'https://a.thumbs.redditmedia.com/w_-zSoIl7PXaMhRbRDLBUC0AAbiMT_H5TZ1CQtp7lI4.png', # BloodAngels
     'https://b.thumbs.redditmedia.com/-pWP4nywemAw-S6xMaZR2H5CslBer1SQ22SfwaaU5Cw.png', # DarkAngels
     'https://b.thumbs.redditmedia.com/YVmQ-AETXtiBPlCJXAmpZLsZwS5i35L8ivxdUM5gifg.png', # ImperialFists

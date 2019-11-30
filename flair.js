@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2019-11-30T11:37:24-0700 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2019-11-30T12:13:40-0700 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -44,6 +44,7 @@ flair.names = {
     "1-5 AdeptusTerra ImperiumOfMan": "Rogue Traders",
     "1-6 AdeptusTerra ImperiumOfMan": "Thunder Warriors",
     "0-0 AdeptusAstartes AdeptusTerra ImperiumOfMan": "Adeptus Astartes",
+    "0-1 AdeptusAstartes AdeptusTerra ImperiumOfMan": "Dreadnought",
     "0-0 DarkAngels AdeptusAstartes ImperiumOfMan": "Dark Angels",
     "0-1 DarkAngels AdeptusAstartes ImperiumOfMan": "Dark Angels",
     "0-2 DarkAngels AdeptusAstartes ImperiumOfMan": "Deathwing",

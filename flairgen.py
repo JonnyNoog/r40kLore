@@ -109,7 +109,7 @@ sheet_source  = [
     'https://b.thumbs.redditmedia.com/NklHyYWkZjxCvLRSEdqOl1HY_fPP3R9uYSyz0YN61-w.png', # UnknownRegiments
     'https://b.thumbs.redditmedia.com/iOyIrRXD6uH4kqFDuhHqasoAyLpqSzGo2aUyluK5l_k.png', # ChaosGods
     'https://b.thumbs.redditmedia.com/080Qa2OxvEppttSVZSWXAtd7qThVt6D1h2wAAtqvyZs.png', # ChaosLegions
-    'https://b.thumbs.redditmedia.com/PNMKlkJJQ3BcI63ElqeX0qo403-5sUpDwtOowWHbMtY.png', # ChaosWarbands
+    'https://a.thumbs.redditmedia.com/_jnJui_xMXxkkzXkBD0ThlzU4Z3u0iNMHFBVEnNHuL0.png', # ChaosWarbands
     'https://b.thumbs.redditmedia.com/nkiLz41xgOxFGv1md03sxd3ZaL1-BPUWZIMb3m6-tqM.png', # TraitorTitanLegions
     'https://b.thumbs.redditmedia.com/uxEt1f9nNLBsQExgJG753OqaLr-h8MaDck7Z2h6ICKE.png', # Craftworlds
     'https://b.thumbs.redditmedia.com/11pLhmSGSYwAJGTEL6-UIvRV_8DwCM_paJuMaDrT6PE.png', # DarkEldar

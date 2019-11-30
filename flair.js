@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2019-11-16T16:49:11-0700 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2019-11-30T11:37:24-0700 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -422,6 +422,13 @@ flair.names = {
     "2-9 ChaosLegions Chaos": "Alpha Legion",
     "3-0 ChaosLegions Chaos": "Alpha Legion",
     "3-1 ChaosLegions Chaos": "Alpha Legion",
+    "0-0 ChaosWarbands Chaos": "Adharon's Reavers",
+    "0-1 ChaosWarbands Chaos": "Angels of Ecstasy",
+    "0-2 ChaosWarbands Chaos": "Angron's Chosen",
+    "0-3 ChaosWarbands Chaos": "Apocalypse Company",
+    "0-4 ChaosWarbands Chaos": "Apostles of Contagion",
+    "0-5 ChaosWarbands Chaos": "Apostles of Minth Ras",
+    "0-6 ChaosWarbands Chaos": "Dark Mechanicus",
     "0-0 TraitorTitanLegions Chaos": "House Devine",
     "0-1 TraitorTitanLegions Chaos": "Legio Excrutiatus (Hell Dogs)",
     "0-2 TraitorTitanLegions Chaos": "Legio fureans (Tiger Eyes)",

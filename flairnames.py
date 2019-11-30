@@ -543,6 +543,17 @@ FLAIR_ETC = [
             ('', True, "Alpha Legion")
         ]
     }),
+    ('ChaosWarbands Chaos', {
+        1: [
+            ('', True, "Adharon's Reavers"),
+            ('', True, "Angels of Ecstasy"),
+            ('', True, "Angron's Chosen"),
+            ('', True, "Apocalypse Company"),
+            ('', True, "Apostles of Contagion"),
+            ('', True, "Apostles of Minth Ras"),
+            ('', True, "Dark Mechanicus")
+        ]
+    }),
     ('TraitorTitanLegions Chaos', {
         1: [
             ('', True, "House Devine"),

@@ -140,13 +140,17 @@ label input[type=checkbox] + span {
 --------------------------------------------------------------------------------*/
 a {
     display: inline-block;
-    font-size: 12px;
     margin-bottom: 5px;
     text-decoration: none;
     color:#e7523e;
 }
+
 a:hover {
     text-decoration: underline;
+}
+
+a#help-link {
+    font-size: 24px;
 }
 
 #help-bubble.hide + .wrapper {

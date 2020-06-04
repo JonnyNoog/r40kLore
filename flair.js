@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2019-11-30T12:13:40-0700 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2020-06-04T19:10:42-0800 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -166,6 +166,7 @@ flair.names = {
     "0-1 Salamanders AdeptusAstartes ImperiumOfMan": "Salamanders",
     "0-2 Salamanders AdeptusAstartes ImperiumOfMan": "Black Dragons",
     "0-3 Salamanders AdeptusAstartes ImperiumOfMan": "Storm Giants",
+    "0-4 Salamanders AdeptusAstartes ImperiumOfMan": "Black Dragons",
     "0-0 RavenGuard AdeptusAstartes ImperiumOfMan": "Raven Guard",
     "0-1 RavenGuard AdeptusAstartes ImperiumOfMan": "Raven Guard",
     "0-2 RavenGuard AdeptusAstartes ImperiumOfMan": "Black Guard",

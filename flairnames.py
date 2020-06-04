@@ -196,7 +196,8 @@ FLAIR_ETC = [
             ('', True, "Salamanders"),
             ('', True, "Salamanders"),
             ('', True, "Black Dragons"),
-            ('', True, "Storm Giants")
+            ('', True, "Storm Giants"),
+            ('', True, "Black Dragons")
         ]
     }),
     ('RavenGuard AdeptusAstartes ImperiumOfMan', {

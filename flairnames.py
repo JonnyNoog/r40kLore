@@ -623,17 +623,18 @@ FLAIR_ETC = [
     ('Harlequins Xenos', {
         1: [
             ('', True, "Harlequins"),
+            ('', True, "Harlequins"),
             ('', True, "Masque of the Dance Without End"),
             ('', True, "Masque of the Dreaming Shadow"),
             ('', True, "Masque of the Frozen Stars"),
-            ('', True, "Masque of the Reapers Mirth"),
+            ('', True, "Masque of the Reaper's Mirth"),
             ('', True, "Masque of the Shattered Mirage"),
             ('', True, "Masque of the Silent Shroud"),
-            ('', True, "Masque of the Soaring Spirit"),
-            ('', True, "Masque of the Twisted Path"),
-            ('', True, "Masque of the Veiled Path"),
+            ('', True, "Masque of the Soaring Spite"),
+            ('', True, "Masque of the Twisted Path")
         ],
         2: [
+            ('', True, "Masque of the Veiled Path"),
             ('', True, "Masque of the Winter Sun")
         ]
     }),
@@ -648,7 +649,7 @@ FLAIR_ETC = [
             ('', True, "Ogodobekh"),
             ('', True, "Oroskh"),
             ('', True, "Oruscar"),
-            ('', True, "Sautekh"),
+            ('', True, "Sautekh")
         ],
         2: [
             ('', True, "Agdagath"),
@@ -660,7 +661,7 @@ FLAIR_ETC = [
             ('', True, "Nepheru"),
             ('', True, "Nephrekh"),
             ('', True, "Nihilakh"),
-            ('', True, "Novokh"),
+            ('', True, "Novokh")
         ],
         3: [
             ('', True, "Ogdobekh"),
@@ -672,7 +673,7 @@ FLAIR_ETC = [
             ('', True, "Temeryn"),
             ('', True, "Thokt"),
             ('', True, "Triarch Praetorians"),
-            ('', True, "Vralekth"),
+            ('', True, "Vralekth")
         ]
     }),
     ('Orks Xenos', {
@@ -686,7 +687,7 @@ FLAIR_ETC = [
             ('', True, "Blood Axes"),
             ('', True, "Death Skulls"),
             ('', True, "Death Skulls"),
-            ('', True, "Evil Sunz"),
+            ('', True, "Evil Sunz")
         ],
         2: [
             ('', True, "Evil Sunz"),
@@ -709,7 +710,7 @@ FLAIR_ETC = [
             ('', True, "Fal'shia"),
             ('', True, "Fi'rios"),
             ('', True, "K'elshan"),
-            ('', True, "Ksi'm'yen"),
+            ('', True, "Ksi'm'yen")
         ],
         2: [
             ('', True, "M'gulath Bay"),

@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2020-06-04T19:10:42-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2020-08-26T09:13:02-0800 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -476,16 +476,17 @@ flair.names = {
     "1-6 DarkEldar Xenos": "Kabal of theSplintered Talon",
     "1-7 DarkEldar Xenos": "Kabal of the Wraithkind",
     "0-0 Harlequins Xenos": "Harlequins",
-    "0-1 Harlequins Xenos": "Masque of the Dance Without End",
-    "0-2 Harlequins Xenos": "Masque of the Dreaming Shadow",
-    "0-3 Harlequins Xenos": "Masque of the Frozen Stars",
-    "0-4 Harlequins Xenos": "Masque of the Reapers Mirth",
-    "0-5 Harlequins Xenos": "Masque of the Shattered Mirage",
-    "0-6 Harlequins Xenos": "Masque of the Silent Shroud",
-    "0-7 Harlequins Xenos": "Masque of the Soaring Spirit",
-    "0-8 Harlequins Xenos": "Masque of the Twisted Path",
-    "0-9 Harlequins Xenos": "Masque of the Veiled Path",
-    "1-0 Harlequins Xenos": "Masque of the Winter Sun",
+    "0-1 Harlequins Xenos": "Harlequins",
+    "0-2 Harlequins Xenos": "Masque of the Dance Without End",
+    "0-3 Harlequins Xenos": "Masque of the Dreaming Shadow",
+    "0-4 Harlequins Xenos": "Masque of the Frozen Stars",
+    "0-5 Harlequins Xenos": "Masque of the Reaper's Mirth",
+    "0-6 Harlequins Xenos": "Masque of the Shattered Mirage",
+    "0-7 Harlequins Xenos": "Masque of the Silent Shroud",
+    "0-8 Harlequins Xenos": "Masque of the Soaring Spite",
+    "0-9 Harlequins Xenos": "Masque of the Twisted Path",
+    "1-0 Harlequins Xenos": "Masque of the Veiled Path",
+    "1-1 Harlequins Xenos": "Masque of the Winter Sun",
     "0-0 Necrons Xenos": "Necrons",
     "0-1 Necrons Xenos": "Necrons",
     "0-2 Necrons Xenos": "Atun",

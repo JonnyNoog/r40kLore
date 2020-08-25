@@ -113,7 +113,7 @@ sheet_source  = [
     'https://b.thumbs.redditmedia.com/nkiLz41xgOxFGv1md03sxd3ZaL1-BPUWZIMb3m6-tqM.png', # TraitorTitanLegions
     'https://b.thumbs.redditmedia.com/uxEt1f9nNLBsQExgJG753OqaLr-h8MaDck7Z2h6ICKE.png', # Craftworlds
     'https://b.thumbs.redditmedia.com/11pLhmSGSYwAJGTEL6-UIvRV_8DwCM_paJuMaDrT6PE.png', # DarkEldar
-    'https://b.thumbs.redditmedia.com/Sh8kyHzlRoxfGv26fWYrlB5z5jupQ9p1nEDSRYrbMvY.png', # Harlequins
+    'https://b.thumbs.redditmedia.com/MSNhAokyLbp46zaxjbeZYNCCBeYzYeeDDEAO48vkTqk.png', # Harlequins
     'https://a.thumbs.redditmedia.com/-VMndSBYcyloXZ--1d1EiDcddrOcOCKE06ugCTD4tO4.png', # Runes
     'https://a.thumbs.redditmedia.com/vEbjTduC63dXIVP7BXH0mtTYcH_5SxMlYAOOU265oS0.png', # Necrons
     'https://b.thumbs.redditmedia.com/1jSVyVr-lepqMllWRR_Pt015zfKNcwE18L71sCQIrWc.png', # Orks

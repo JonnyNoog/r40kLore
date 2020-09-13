@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2020-08-26T09:13:02-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2020-09-13T14:29:32-0800 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -303,6 +303,7 @@ flair.names = {
     "0-3 RenegadeChapters AdeptusAstartes ImperiumOfMan": "Relictors",
     "0-4 RenegadeChapters AdeptusAstartes ImperiumOfMan": "Soul Drinkers",
     "0-5 RenegadeChapters AdeptusAstartes ImperiumOfMan": "Tiger Claws",
+    "0-6 RenegadeChapters AdeptusAstartes ImperiumOfMan": "Ashen Claws",
     "0-0 AstraMilitarum ImperiumOfMan AdeptusTerra": "Astra Militarum",
     "0-1 AstraMilitarum ImperiumOfMan": "1st Kronus Regiment",
     "0-2 AstraMilitarum ImperiumOfMan": "5th Arcadian Regiment",

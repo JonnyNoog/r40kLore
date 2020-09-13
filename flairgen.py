@@ -93,7 +93,7 @@ sheet_source  = [
     'https://b.thumbs.redditmedia.com/YVmQ-AETXtiBPlCJXAmpZLsZwS5i35L8ivxdUM5gifg.png', # ImperialFists
     'https://b.thumbs.redditmedia.com/hEHsr5S589kUft2BXRHyZxVjwcvWPsJLMfUhQ6MuWJY.png', # IronHands
     'https://b.thumbs.redditmedia.com/wvzV0ww5fUfinAi-TY2rz04Q_Q0GnNesNhzdlY2p-AM.png', # RavenGuard
-    'https://b.thumbs.redditmedia.com/NE9TGdNa8hfuHpzrmlL66ymTv1wMASLBgWSfE1KQHDo.png', # RenegadeChapters
+    'https://b.thumbs.redditmedia.com/z-5nqY4EcrffkVzJXUK1FB2UQngSGqGiGXvDLufy4AY.png', # RenegadeChapters
     'https://b.thumbs.redditmedia.com/p2RtUhCc0jAxEmdYCyBu-wKojCLWzlwAXdFWKS4ZTlg.png', # Salamanders
     'https://b.thumbs.redditmedia.com/AItZ2fY8R3cvJYepahZvBUUF8q8H2Lr1I_hfO68O8Jw.png', # SpaceWolves
     'https://b.thumbs.redditmedia.com/aaCDsPCaZplYoMefS-W5LX_HwxGeEcKc5EOn-JCDqro.png', # Ultramarines

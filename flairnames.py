@@ -369,7 +369,8 @@ FLAIR_ETC = [
             ('', True, "Knights of Blood"),
             ('', True, "Relictors"),
             ('', True, "Soul Drinkers"),
-            ('', True, "Tiger Claws")
+            ('', True, "Tiger Claws"),
+            ('', True, "Ashen Claws")
         ]
     }),
     ('AstraMilitarum ImperiumOfMan', {

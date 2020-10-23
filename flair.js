@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2020-09-13T14:29:32-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2020-10-23T18:32:26-0700 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -297,6 +297,7 @@ flair.names = {
     "11-2 UnknownFoundings AdeptusAstartes ImperiumOfMan": "White Minotaurs",
     "11-3 UnknownFoundings AdeptusAstartes ImperiumOfMan": "White Templars",
     "11-4 UnknownFoundings AdeptusAstartes ImperiumOfMan": "Yellow Jackets",
+    "11-5 UnknownFoundings AdeptusAstartes ImperiumOfMan": "Space Sharks",
     "0-0 RenegadeChapters AdeptusAstartes ImperiumOfMan": "Astral Claws",
     "0-1 RenegadeChapters AdeptusAstartes ImperiumOfMan": "Crimson Castellans",
     "0-2 RenegadeChapters AdeptusAstartes ImperiumOfMan": "Knights of Blood",

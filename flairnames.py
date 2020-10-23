@@ -359,7 +359,8 @@ FLAIR_ETC = [
             ('', True, "Warriors Tempest"),
             ('', True, "White Minotaurs"),
             ('', True, "White Templars"),
-            ('', True, "Yellow Jackets")
+            ('', True, "Yellow Jackets"),
+            ('', True, "Space Sharks")
         ]
     }),
     ('RenegadeChapters AdeptusAstartes ImperiumOfMan', {

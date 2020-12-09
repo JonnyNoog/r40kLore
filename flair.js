@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2020-10-23T18:32:26-0700 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2020-12-09T17:17:54-0700 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {

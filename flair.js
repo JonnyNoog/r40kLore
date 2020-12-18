@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2020-12-09T17:17:54-0700 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2020-12-18T17:44:40-0700 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -438,9 +438,9 @@ flair.names = {
     "0-2 TraitorTitanLegions Chaos": "Legio fureans (Tiger Eyes)",
     "0-3 TraitorTitanLegions Chaos": "Legio Mortis (Death's Head)",
     "0-4 TraitorTitanLegions Chaos": "Legio Survurtoras (Fire Masters)",
-    "0-0 Craftworlds Eldar Xenos": "Eldar",
-    "0-1 Craftworlds Eldar Xenos": "Eldar",
-    "0-2 Craftworlds Eldar Xenos": "Eldar",
+    "0-0 Craftworlds Eldar Xenos": "Asuryani",
+    "0-1 Craftworlds Eldar Xenos": "Asuryani",
+    "0-2 Craftworlds Eldar Xenos": "Asuryani",
     "0-3 Craftworlds Eldar Xenos": "Alaitoc",
     "0-4 Craftworlds Eldar Xenos": "Altansar",
     "0-5 Craftworlds Eldar Xenos": "Biel-Tan",
@@ -459,8 +459,8 @@ flair.names = {
     "0-3 Runes Eldar Xenos": "Solitaire",
     "0-4 Runes Eldar Xenos": "Unity",
     "0-5 Runes Eldar Xenos": "Voidweaver",
-    "0-0 DarkEldar Xenos": "Dark Eldar",
-    "0-1 DarkEldar Xenos": "Dark Eldar",
+    "0-0 DarkEldar Xenos": "Drukhari",
+    "0-1 DarkEldar Xenos": "Drukhari",
     "0-2 DarkEldar Xenos": "Kabal of the Baleful Gaze",
     "0-3 DarkEldar Xenos": "Kabal of the Black Heart",
     "0-4 DarkEldar Xenos": "Kabal of the Black Myriad",

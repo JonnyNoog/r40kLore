@@ -569,9 +569,9 @@ FLAIR_ETC = [
     }),
     ('Craftworlds Eldar Xenos', {
         1: [
-            ('', True, "Eldar"),
-            ('', True, "Eldar"),
-            ('', True, "Eldar"),
+            ('', True, "Asuryani"),
+            ('', True, "Asuryani"),
+            ('', True, "Asuryani"),
             ('', True, "Alaitoc"),
             ('', True, "Altansar"),
             ('', True, "Biel-Tan"),
@@ -600,8 +600,8 @@ FLAIR_ETC = [
     }),
     ('DarkEldar Xenos', {
         1: [
-            ('', True, "Dark Eldar"),
-            ('', True, "Dark Eldar"),
+            ('', True, "Drukhari"),
+            ('', True, "Drukhari"),
             ('', True, "Kabal of the Baleful Gaze"),
             ('', True, "Kabal of the Black Heart"),
             ('', True, "Kabal of the Black Myriad"),

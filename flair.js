@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2020-12-18T17:44:40-0700 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2021-03-14T16:24:20-0700 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -563,5 +563,6 @@ flair.names = {
 //    "0-2 NonUserFlair": "Great Wolf",
 //    "0-3 NonUserFlair": "Black Library",
 //    "0-4 NonUserFlair": "Remembrancers",
-//    "0-5 NonUserFlair": "Crux Terminatus"
+//    "0-5 NonUserFlair": "Crux Terminatus",
+//    "0-6 NonUserFlair": "God-Emperor of Mankind"
 };

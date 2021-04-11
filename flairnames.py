@@ -745,6 +745,8 @@ FLAIR_ETC = [
             ('', False, "Master of the Adeptus Astra Telepathica"),
             ('', False, "Abbess Sanctorum of the Adepta Sororitas"),
             ('', False, "Master of the Adeptus Administratum"),
+        ],
+        2: [
             ('', False, "Grand Provost Marshal of the Adeptus Arbites"),
             ('', False, "Grand Master of the Officio Assassinorum"),
             ('', False, "Master of the Astronomican"),
@@ -755,6 +757,8 @@ FLAIR_ETC = [
             ('', False, "Lord High Admiral of the Imperial Navy"),
             ('', False, "Representative of the Inquisition"),
             ('', False, "Fabricator-General of the Adeptus Mechanicus"),
+        ],
+        3: [
             ('', False, "Paternoval Envoy of the Navigators"),
             ('', False, "Servitor"),
         ]

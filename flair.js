@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2021-03-14T16:24:20-0700 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2021-04-11T14:10:29-0800 (ISO-8601) */ 
 flair.loadById = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -564,5 +564,20 @@ flair.names = {
 //    "0-3 NonUserFlair": "Black Library",
 //    "0-4 NonUserFlair": "Remembrancers",
 //    "0-5 NonUserFlair": "Crux Terminatus",
-//    "0-6 NonUserFlair": "God-Emperor of Mankind"
+//    "0-6 NonUserFlair": "God-Emperor of Mankind",
+//    "0-7 NonUserFlair": "Master of the Adeptus Astra Telepathica",
+//    "0-8 NonUserFlair": "Abbess Sanctorum of the Adepta Sororitas",
+//    "0-9 NonUserFlair": "Master of the Adeptus Administratum",
+//    "0-10 NonUserFlair": "Grand Provost Marshal of the Adeptus Arbites",
+//    "0-11 NonUserFlair": "Grand Master of the Officio Assassinorum",
+//    "0-12 NonUserFlair": "Master of the Astronomican",
+//    "0-13 NonUserFlair": "Speaker for the Chartist Captains",
+//    "0-14 NonUserFlair": "Captain-General of the Adeptus Custodes",
+//    "0-15 NonUserFlair": "Ecclesiarch of the Adeptus Ministorum",
+//    "0-16 NonUserFlair": "Lord Commander Militant of the Astra Militarum",
+//    "0-17 NonUserFlair": "Lord High Admiral of the Imperial Navy",
+//    "0-18 NonUserFlair": "Representative of the Inquisition",
+//    "0-19 NonUserFlair": "Fabricator-General of the Adeptus Mechanicus",
+//    "0-20 NonUserFlair": "Paternoval Envoy of the Navigators",
+//    "0-21 NonUserFlair": "Servitor"
 };

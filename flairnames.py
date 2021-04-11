@@ -741,7 +741,22 @@ FLAIR_ETC = [
             ('', False, "Black Library"),
             ('', False, "Remembrancers"),
             ('', False, "Crux Terminatus"),
-            ('', False, "God-Emperor of Mankind")
+            ('', False, "God-Emperor of Mankind"),
+            ('', False, "Master of the Adeptus Astra Telepathica"),
+            ('', False, "Abbess Sanctorum of the Adepta Sororitas"),
+            ('', False, "Master of the Adeptus Administratum"),
+            ('', False, "Grand Provost Marshal of the Adeptus Arbites"),
+            ('', False, "Grand Master of the Officio Assassinorum"),
+            ('', False, "Master of the Astronomican"),
+            ('', False, "Speaker for the Chartist Captains"),
+            ('', False, "Captain-General of the Adeptus Custodes"),
+            ('', False, "Ecclesiarch of the Adeptus Ministorum"),
+            ('', False, "Lord Commander Militant of the Astra Militarum"),
+            ('', False, "Lord High Admiral of the Imperial Navy"),
+            ('', False, "Representative of the Inquisition"),
+            ('', False, "Fabricator-General of the Adeptus Mechanicus"),
+            ('', False, "Paternoval Envoy of the Navigators"),
+            ('', False, "Servitor"),
         ]
     }),
 ]
